@@ -1,6 +1,7 @@
 # @package _global_
 
 arch_name: wbvima
+run_name: "${arch_name}_${task.name}_task_info_${data.use_task_info}"
 
 # ====== Policy specific ======
 horizon: 2

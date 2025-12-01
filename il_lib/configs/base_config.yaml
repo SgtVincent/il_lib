@@ -69,6 +69,7 @@ data:
   max_num_demos: null 
   seed: ${seed}
   dataset_class: omnigibson.learning.datas.BehaviorIterableDataset
+  skill_name: null # used in hierarchical policy
   # ====== Dataset ======
   robot_type: ${robot.type}
   obs_window_size: ${num_latest_obs}

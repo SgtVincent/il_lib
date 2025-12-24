@@ -1,0 +1,31 @@
+# @package _global_
+
+# Default GT sequence and steps for eval_hierarchical_gt
+sequence: "move to,pick up from,place on,press"
+per_skill_steps: 5
+
+module:
+  # Default mapping is empty; users should override skill->ckpt mapping.
+  skills: {
+    "move to": "/mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/repo/b1k-baselines/baselines/il_lib/outputs/2025-12-01/17-19-10/wbvima_turning_on_radio_move_to_20251201-171910/ckpt/last.pth",
+    "pick up from": "/mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/repo/b1k-baselines/baselines/il_lib/outputs/2025-12-01/17-32-19/wbvima_turning_on_radio_pick_up_from_20251201-173219/ckpt/last.pth",
+    "place on": "/mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/repo/b1k-baselines/baselines/il_lib/outputs/2025-12-01/17-19-07/wbvima_turning_on_radio_place_on_20251201-171907/ckpt/last.pth",
+    "press": "/mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/repo/b1k-baselines/baselines/il_lib/outputs/2025-12-01/17-19-07/wbvima_turning_on_radio_press_20251201-171907/ckpt/last.pth"
+
+  }
+
+online_eval:
+  _target_: omnigibson.learning.eval.Evaluator
+  cfg:
+    write_video: false
+    partial_scene_load: false
+    eval_on_train_instances: false
+    headless: ${headless}
+    env_wrapper:
+      _target_: omnigibson.learning.wrappers.wbvima_wrapper.WBVIMAWrapper
+    task: ${task}
+    robot: ${robot}
+    policy_name: ${arch_name}
+    max_steps: 1000
+    model:
+      _target_: omnigibson.learning.policies.LocalPolicy

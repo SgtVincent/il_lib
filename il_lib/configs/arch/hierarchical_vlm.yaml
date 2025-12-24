@@ -1,0 +1,28 @@
+# @package _global_
+
+arch_name: hierarchical_vlm
+run_name: "${arch_name}_${task.name}"
+horizon: 2
+num_latest_obs: 2
+deployed_action_steps: 8
+wd: 0.0
+bs: 64
+
+module:
+  _target_: il_lib.policies.hierarchical_vlm_wbvima_policy.HierarchicalVLMWBVIMAPolicy
+  # Provide an empty mapping by default. Users should override with actual ckpt paths.
+  skills: {}
+  # Path to the directory containing episode metadata (e.g. episode_00000010.json)
+  # This is used to load 'task_obs_keys' for interpreting the task info tensor.
+  task_meta_path: "/mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/data/2025-challenge-demos/meta/episodes/task-0000"
+  # api_key: "YOUR_API_KEY" # Optional, can use ARK_API_KEY env var
+  query_frequency: 100
+  verbose: true
+  log_dir: "eval_logs/vlm_queries/${run_name}"
+  action_keys: ${robot.action_keys}
+
+data:
+  # default visual observation types for hierarchical policy (override per-skill if needed)
+  visual_obs_types: [rgb, pcd]
+  # We need task info for the VLM to make decisions
+  use_task_info: true

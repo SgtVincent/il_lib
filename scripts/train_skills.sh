@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# source /mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/miniconda3/etc/profile.d/conda.sh  # To ensure
-source /home/ubuntu/miniconda3/etc/profile.d/conda.sh
+
+# source /home/ubuntu/miniconda3/etc/profile.d/conda.sh
+# source /mnt/bn/robot-mllm-data-lf-3/mlx/users/chenjunting/miniconda3/etc/profile.d/conda.sh
+source /mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/miniconda3/etc/profile.d/conda.sh  # To ensure
 conda activate behavior
+
+export LD_LIBRARY_PATH=/mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/miniconda3/envs/behavior/lib:$LD_LIBRARY_PATH
 
 # Define paths
 # Adjust DATA_PATH to point to your actual dataset location
 DATA_PATH="/mnt/bn/robot-mllm-data-hl/mlx/users/chenjunting/data"
+# DATA_PATH="/mnt/bn/robot-mllm-data-lf-3/mlx/users/chenjunting/data"
 TASK="turning_on_radio"
 ROBOT="r1pro"
 ARCH="wbvima"

@@ -141,3 +141,8 @@ resume:
 hydra:
   job:
     chdir: true
+  # Configure Hydra to use date-only output directories (YYYY-MM-DD) instead of including timestamp (HH-MM-SS)
+  run:
+    dir: outputs/${now:%Y-%m-%d}
+  sweep:
+    dir: multirun/${now:%Y-%m-%d}

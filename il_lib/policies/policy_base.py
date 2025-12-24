@@ -356,6 +356,9 @@ class PolicyWrapper:
                 if "pcd" in self.visual_obs_types:
                     # move rgb dim back
                     pcd_obs[f"{camera}::rgb"] = rgb_obs.movedim(-3, -1).to(self.policy.device)
+                    # Also store RGB in processed_obs if 'rgb' is explicitly requested (for VLM etc.)
+                    if "rgb" in self.visual_obs_types:
+                        processed_obs[f"{camera}::rgb"] = self._post_processing_fn(rgb_obs)
                 else:
                     processed_obs[f"{camera}::rgb"] = self._post_processing_fn(rgb_obs)
             if "depth_linear" in self.visual_obs_types or "pcd" in self.visual_obs_types:

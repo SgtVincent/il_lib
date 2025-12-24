@@ -35,7 +35,13 @@ class HierarchicalPolicy(BasePolicy):
     def act(self, obs, policy_state=None, deterministic=None) -> torch.Tensor:
         skill_name = self.get_active_skill(obs)
         # We assume sub-policies are stateless or handle state internally/via wrapper
-        return self.policies[skill_name].act(obs, policy_state, deterministic)
+        subpolicy = self.policies[skill_name]
+        # Sub-policies may implement different 'act' signatures (e.g., some only accept 'obs').
+        # Prefer calling with only 'obs' and fall back to forwarding all args if necessary.
+        try:
+            return subpolicy.act(obs)
+        except TypeError:
+            return subpolicy.act(obs, policy_state, deterministic)
     
     def reset(self) -> None:
         for policy in self.policies.values():

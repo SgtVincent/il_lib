@@ -1,0 +1,20 @@
+# @package _global_
+
+arch_name: hierarchical
+run_name: "${arch_name}_${task.name}"
+horizon: 2
+num_latest_obs: 2
+deployed_action_steps: 8
+wd: 0.0
+bs: 64
+
+module:
+  _target_: il_lib.policies.hierarchical_policy.HierarchicalPolicy
+  # Provide an empty mapping by default. Users should override with actual ckpt paths.
+  skills: {}
+
+data:
+  # default visual observation types for hierarchical policy (override per-skill if needed)
+  visual_obs_types: [rgb]
+  use_task_info: false
+

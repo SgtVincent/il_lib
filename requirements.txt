@@ -10,3 +10,4 @@ wandb
 rich
 scikit-learn
 tabulate
+openai

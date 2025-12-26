@@ -23,7 +23,7 @@ class HierarchicalPolicy(BasePolicy):
             # It requires the class to be the same as the one saved.
             # If the saved model is WBVIMA, this works.
             # We map to cpu to avoid GPU OOM during loading, Lightning handles moving to device
-            self.policies[skill_name] = WBVIMA.load_from_checkpoint(ckpt_path, map_location='cpu')
+            self.policies[skill_name] = WBVIMA.load_from_checkpoint(ckpt_path, map_location='cpu', weights_only=False)
             self.policies[skill_name].eval()
             self.policies[skill_name].freeze()
             

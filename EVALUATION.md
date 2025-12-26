@@ -116,3 +116,57 @@ python ../../OmniGibson/omnigibson/learning/eval.py \
   env_wrapper._target_=omnigibson.learning.wrappers.wbvima_wrapper.WBVIMAWrapper \
   log_path=./eval_logs/hierarchical_vlm
 ```
+
+---
+
+## 5. SubTask (Primitive) Evaluation - BRS Protocol
+
+This evaluation follows the BRS paper protocol for subtask-level (primitive-level) evaluation:
+- Evaluate each primitive in sequence
+- If a primitive fails (timeout), reset the robot to the start of the next primitive
+- Report both SubTask (ST) success rates and End-to-End (ET) success rates
+
+This is useful for more granular evaluation of policy performance on long-horizon tasks.
+
+**Step 1: Start the Policy Server**
+Run this in a terminal:
+```bash
+cd baselines/il_lib
+python serve.py \
+  robot=r1pro \
+  task=behavior \
+  task.name=turning_on_radio \
+  arch=wbvima \
+  ckpt_path=/path/to/checkpoint.pth
+```
+
+**Step 2: Run SubTask Evaluation**
+Run this in a **separate** terminal:
+```bash
+conda activate behavior
+# in ./BEHAVIOR-1K folder
+python ./OmniGibson/omnigibson/learning/subtask_eval.py \
+  policy=websocket \
+  task.name=turning_on_radio \
+  env_wrapper._target_=omnigibson.learning.wrappers.wbvima_wrapper.WBVIMAWrapper \
+  demo_data_path=/mnt/bn/navigation-hl/mlx/users/chenjunting/data/2025-challenge-demos \
+  log_path=./eval_logs/subtask_eval \
+  reset_on_primitive_failure=true \
+  primitive_timeout_multiplier=2.0 \
+  num_demos=10
+```
+
+**Options:**
+- `demo_data_path`: Path to the `2025-challenge-demos` folder containing `annotations` and `data` (required)
+- `rawdata_path`: Optional path to raw HDF5 data for more accurate state restoration
+- `reset_on_primitive_failure`: If true, reset to next primitive start when current fails (default: true)
+- `primitive_timeout_multiplier`: Timeout = demo_primitive_duration * multiplier (default: 2.0)
+- `num_demos`: Number of demos to evaluate (null = all available)
+
+**Output:**
+The evaluation produces:
+- Per-primitive results JSON files: `subtask_eval_{task_name}_{demo_id}.json`
+- Aggregate metrics: `subtask_eval_{task_name}_aggregate.json` containing:
+  - `primitive_success_rate`: ST success rate
+  - `endtoend_success_rate`: ET success rate
+  - `per_demo_results`: Detailed results per demo

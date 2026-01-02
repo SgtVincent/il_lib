@@ -1,0 +1,51 @@
+task_id,task_name,num_skills,skills_semicolon_separated
+0,turning_on_radio,4,move to; pick up from; place on; press
+1,picking_up_trash,4,move to; pick up from; place in; place on
+2,putting_away_Halloween_decorations,6,close drawer; move to; open drawer; pick up from; place in; place on next to
+3,cleaning_up_plates_and_food,6,close door; move to; open door; pick up from; place in; push to
+4,can_meat,9,close door; close lid; hand over; move to; open door; open lid; pick up from; place in; turn to
+5,setting_mousetraps,3,move to; pick up from; place on next to
+6,hiding_Easter_eggs,4,move to; pick up from; place on; place on next to
+7,picking_up_toys,6,hand over; move to; pick up from; place in; place on; push to
+8,rearranging_kitchen_furniture,8,close door; move to; open door; pick up from; place in; place in next to; push to; turn to
+9,putting_up_Christmas_decorations_inside,6,move to; pick up from; place on; place on next to; pour; push to
+10,set_up_a_coffee_station_in_your_kitchen,6,move to; pick up from; place in; place on; place on next to; push to
+11,putting_dishes_away_after_cleaning,6,close door; move to; open door; pick up from; place in; place on
+12,preparing_lunch_box,7,close door; move to; open door; pick up from; place in; place on next to; push to
+13,loading_the_car,7,close lid; move to; open door; open lid; pick up from; place in; push to
+14,carrying_in_groceries,10,close door; close lid; hand over; move to; open door; pick up from; place in; place on; pour; tip over
+15,bringing_in_wood,4,move to; open door; pick up from; place on
+16,moving_boxes_to_storage,4,move to; open door; pick up from; place on
+17,bringing_water,6,close door; hand over; move to; open door; pick up from; place on
+18,tidying_bedroom,6,hand over; move to; pick up from; place on; place on next to; push to
+19,outfit_a_basic_toolbox,7,close lid; move to; open lid; pick up from; place in; place on; push to
+20,sorting_vegetables,5,move to; pick up from; place in; place on; push to
+21,collecting_childrens_toys,7,hand over; move to; pick up from; place in; place on; place on next to; push to
+22,putting_shoes_on_rack,3,move to; pick up from; place in
+23,boxing_books_up_for_storage,5,move to; pick up from; place in; place on; push to
+24,storing_food,8,close door; move to; open door; pick up from; place in; place on; push to; tip over
+25,clearing_food_from_table_into_fridge,7,close door; move to; open door; pick up from; place in; place on; push to
+26,assembling_gift_baskets,6,hand over; move to; pick up from; place in; place on; push to
+27,sorting_household_items,7,move to; open door; pick up from; place in; place on; place under; push to
+28,getting_organized_for_work,7,hand over; move to; pick up from; place on; place on next to; push to; turn to
+29,clean_up_your_desk,10,close lid; hand over; insert; move to; pick up from; place in; place on; place on next to; push to; turn to
+30,setting_the_fire,7,ignite; move to; pick up from; place in; push to; turn off switch; turn on switch
+31,clean_boxing_gloves,7,close door; move to; open door; pick up from; place in; turn on switch; turn to
+32,wash_a_baseball_cap,7,close door; move to; open door; pick up from; place in; turn on switch; turn to
+33,wash_dog_toys,7,close door; move to; open door; pick up from; place in; push to; turn on switch
+34,hanging_pictures,5,hand over; hang; move to; pick up from; push to
+35,attach_a_camera_to_a_tripod,6,attach; hold; move to; pick up from; place on; release
+36,clean_a_patio,8,hand over; hold; move to; pick up from; place on; push to; release; sweep surface
+37,clean_a_trumpet,5,hand over; move to; pick up from; place on; wipe hard
+38,spraying_for_bugs,6,move to; pick up from; push to; spray; turn off switch; turn on switch
+39,spraying_fruit_trees,5,move to; pick up from; spray; turn off switch; turn on switch
+40,make_microwave_popcorn,6,close door; move to; open door; pick up from; place in; turn on switch
+41,cook_cabbage,11,chop; close door; move to; open door; pick up from; place on; place on next to; pour; push to; turn on switch; turn to
+42,chop_an_onion,9,chop; move to; pick up from; place in; place on; place on next to; pour; push to; turn to
+43,slicing_vegetables,8,chop; close door; move to; open door; pick up from; place on; push to; turn to
+44,chopping_wood,6,chop; move to; pick up from; place on; push to; sweep off
+45,cook_hot_dogs,7,close door; move to; open door; pick up from; place in; place on; turn on switch
+46,cook_bacon,9,close door; move to; open door; pick up from; place on; place on next to; pour; turn on switch; turn to
+47,freeze_pies,6,close door; move to; open door; pick up from; place in; place on
+48,canning_food,10,chop; close door; move to; open door; pick up from; place in; place on; place on next to; pour; push to
+49,make_pizza,14,chop; close door; move to; open door; pick up from; place in; place on; place on next to; pour; pull tray; push to; push tray; turn on switch; turn to

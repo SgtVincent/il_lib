@@ -97,65 +97,89 @@ class HierarchicalVLMWBVIMAPolicy(HierarchicalPolicy):
             api_key=self.api_key or "dummy_key", # Prevent crash on init if key missing, will fail on call
         )
         
-        # Cache the last selected skill to avoid flickering or excessive API calls?
-        # For now, we query every time as requested, but in practice one might want to hold a skill until completion.
+        # Cache the last selected skill to reduce flickering / API calls.
+        self.last_skill: Optional[str] = None
+
+    def reset(self) -> None:
+        super().reset()
         self.last_skill = None
+        self.step_counter = 0
 
     def get_active_skill(self, obs: Dict[str, Any]) -> str:
-        """
-        Query VLM to determine the active skill.
-        """
-        # Rate limiting: only query if it's the first step or every query_frequency steps
+        """Query VLM to determine the active skill."""
+
+        skills_list = list(self.policies.keys())
+        if len(skills_list) == 0:
+            raise RuntimeError("No skills loaded for HierarchicalVLMWBVIMAPolicy.")
+
+        # Optional metadata (e.g., primitive description). This is a soft hint only.
+        meta = obs.get("_meta") if isinstance(obs, dict) else None
+        if not isinstance(meta, dict):
+            meta = {}
+
+        # Rate limiting: only query if it's the first step or every query_frequency steps.
         if self.last_skill is not None and self.step_counter % self.query_frequency != 0:
             self.step_counter += 1
             return self.last_skill
 
-        # 1. Extract Observation Data
-        # obs['obs'] is expected to contain camera RGB (e.g. 'robot_r1::head_camera::rgb') 
-        # and 'task' (if use_task_info=True)
-        
-        observation = obs.get('obs', {})
-        
+        # 1) Extract observation data
+        observation = obs.get("obs", {}) if isinstance(obs, dict) else {}
+
         # Find RGB tensor (prefer head camera)
         rgb_tensor = None
         for key in observation:
-            if "::rgb" in key:
+            if "::rgb" not in key:
+                continue
+            if rgb_tensor is None or "head" in key:
+                rgb_tensor = observation[key]
                 if "head" in key:
-                    rgb_tensor = observation[key]
-                    if self.verbose:
-                        logger.info(f"Found head camera RGB: {key}, shape: {rgb_tensor.shape}")
                     break
-                if rgb_tensor is None:
-                    rgb_tensor = observation[key]
-                    if self.verbose:
-                        logger.info(f"Found RGB: {key}, shape: {rgb_tensor.shape}")
-        
-        task_tensor = observation.get('task')
-        
-        # 2. Prepare Image
+
+        task_tensor = observation.get("task")
+
+        # 2) Prepare image
         img_str = self._process_image(rgb_tensor)
         if img_str is None:
-            logger.warning("Could not process RGB image for VLM. Defaulting to first skill.")
+            logger.warning("Could not process RGB image for VLM. Using default skill.")
             self.step_counter += 1
             return self._default_skill()
 
-        # 3. Prepare Task Info
+        # 3) Prepare task info
         task_info_str = self._process_task_info(task_tensor)
-        
-        # 4. Construct Prompt
-        skills_list = list(self.policies.keys())
-        prompt_text = (
-            f"You are a robot control policy. Available skills are: {', '.join(skills_list)}.\n"
-            f"Current Task Information (Ground Truth):\n{task_info_str}\n"
-            "Based on the visual observation and task information, which skill should be executed next? "
-            "Return ONLY the skill name from the available list. Do not add any explanation."
-        )
-        
-        if self.verbose:
-            print(f"\n[VLM Policy] Step {self.step_counter}: Querying VLM...")
-            print(f"[VLM Policy] Prompt:\n{prompt_text}")
 
-        # 5. Call VLM
+        # 4) Construct prompt (optionally include primitive metadata)
+        primitive_desc = meta.get("primitive_desc", None)
+        primitive_idx = meta.get("primitive_idx", None)
+        expected_skill = meta.get("expected_skill", None)
+
+        primitive_str = ""
+        if primitive_desc is not None:
+            primitive_str = f"\nContext (Current Primitive): {primitive_desc}\n"
+        elif primitive_idx is not None:
+            primitive_str = f"\nContext (Current Primitive Index): {primitive_idx}\n"
+
+        expected_str = ""
+        if expected_skill is not None:
+            expected_str = (
+                "\nHint: An external evaluator expects the next skill to likely be "
+                f"'{expected_skill}'. Prefer it only if consistent with the observation.\n"
+            )
+
+        prompt_text = (
+            "You are a robot control policy.\n"
+            f"Available skills: {', '.join(skills_list)}\n\n"
+            f"Task information (ground truth tensor decoded):\n{task_info_str}\n"
+            f"{primitive_str}"
+            f"{expected_str}"
+            "Which skill should be executed next?\n"
+            "Return ONLY one skill name from the Available skills list."
+        )
+
+        if self.verbose:
+            logger.info(f"[VLM Policy] Step {self.step_counter}: Querying VLM")
+            logger.info(f"[VLM Policy] Prompt:\n{prompt_text}")
+
+        # 5) Call VLM
         try:
             response = self.client.chat.completions.create(
                 model=self.model_name,
@@ -166,11 +190,9 @@ class HierarchicalVLMWBVIMAPolicy(HierarchicalPolicy):
                             {"type": "text", "text": prompt_text},
                             {
                                 "type": "image_url",
-                                "image_url": {
-                                    "url": f"data:image/jpeg;base64,{img_str}"
-                                }
-                            }
-                        ]
+                                "image_url": {"url": f"data:image/jpeg;base64,{img_str}"},
+                            },
+                        ],
                     }
                 ],
                 max_tokens=20,
@@ -178,23 +200,17 @@ class HierarchicalVLMWBVIMAPolicy(HierarchicalPolicy):
             )
             raw_content = response.choices[0].message.content
             content = raw_content.strip() if raw_content else ""
-            
-            if self.verbose:
-                print(f"[VLM Policy] Response: {content}")
 
-            # 6. Parse Response
-            # Find the skill name in the response
+            # 6) Parse response
             selected_skill = None
-            # Exact match check first
             if content in skills_list:
                 selected_skill = content
             else:
-                # Fuzzy match: check if skill name is in content
                 for skill in skills_list:
                     if skill in content:
                         selected_skill = skill
                         break
-            
+
             # Save I/O logs
             if self.log_dir:
                 timestamp = time.strftime("%Y%m%d-%H%M%S")
@@ -204,7 +220,8 @@ class HierarchicalVLMWBVIMAPolicy(HierarchicalPolicy):
                     "prompt": prompt_text,
                     "image_base64": img_str,
                     "response_raw": content,
-                    "selected_skill": selected_skill
+                    "selected_skill": selected_skill,
+                    "meta": meta,
                 }
                 try:
                     with open(log_file, "w") as f:
@@ -212,16 +229,18 @@ class HierarchicalVLMWBVIMAPolicy(HierarchicalPolicy):
                 except Exception as e:
                     logger.error(f"Failed to save VLM log: {e}")
 
-            if selected_skill:
+            if selected_skill is not None:
                 if selected_skill != self.last_skill:
                     logger.info(f"VLM switched skill to: {selected_skill}")
-                    self.last_skill = selected_skill
+                self.last_skill = selected_skill
                 self.step_counter += 1
                 return selected_skill
-            else:
-                logger.warning(f"VLM returned '{content}', which does not match any known skill. Using default.")
-                self.step_counter += 1
-                return self._default_skill()
+
+            logger.warning(
+                f"VLM returned '{content}', which does not match any known skill. Using default."
+            )
+            self.step_counter += 1
+            return self._default_skill()
 
         except Exception as e:
             logger.error(f"Error calling VLM: {e}")
@@ -231,29 +250,29 @@ class HierarchicalVLMWBVIMAPolicy(HierarchicalPolicy):
     def _process_image(self, rgb_tensor: Optional[torch.Tensor]) -> Optional[str]:
         if rgb_tensor is None:
             return None
-            
+
         # Handle dimensions: (B, T, C, H, W) or (B, C, H, W)
         # We take the first element of the batch, and the last frame if temporal
         try:
-            if rgb_tensor.ndim == 5: 
+            if rgb_tensor.ndim == 5:
                 img_t = rgb_tensor[0, -1]
             elif rgb_tensor.ndim == 4:
                 img_t = rgb_tensor[0]
             else:
                 return None
-                
+
             # Convert to numpy (C, H, W) -> (H, W, C)
             img_np = img_t.detach().cpu().numpy()
             if img_np.shape[0] in [1, 3]:
                 img_np = np.transpose(img_np, (1, 2, 0))
-                
+
             # Normalize if needed (assuming float 0-1 or int 0-255)
-            if img_np.dtype == np.float32 or img_np.dtype == np.float64:
+            if img_np.dtype in (np.float32, np.float64):
                 if img_np.max() <= 1.0:
                     img_np = (img_np * 255).astype(np.uint8)
                 else:
                     img_np = img_np.astype(np.uint8)
-            
+
             pil_img = Image.fromarray(img_np)
             buffered = io.BytesIO()
             pil_img.save(buffered, format="JPEG")

@@ -266,6 +266,14 @@ class PolicyWrapper:
         self.joint_range = JOINT_RANGE[self.robot_type]
 
     def act(self, obs: dict, *args, **kwargs) -> torch.Tensor:
+        # Allow callers (e.g. primitive eval) to attach non-tensor metadata.
+        # Keep it out of any_to_torch() and out of the temporal concat.
+        meta = None
+        if isinstance(obs, dict) and "_meta" in obs:
+            meta = obs.get("_meta")
+            obs = dict(obs)
+            obs.pop("_meta", None)
+
         obs = any_to_torch(obs, device="cpu")
         obs = self.process_obs(obs=obs)
         if len(self._obs_history) == 0:
@@ -277,7 +285,10 @@ class PolicyWrapper:
 
         need_inference = self._action_idx % self.deployed_action_steps == 0
         if need_inference:
-            self._action_traj_pred = self.policy.act({"obs": obs}).squeeze(0)  # (T_A, A)
+            policy_input = {"obs": obs}
+            if meta is not None:
+                policy_input["_meta"] = meta
+            self._action_traj_pred = self.policy.act(policy_input).squeeze(0)  # (T_A, A)
             self._action_idx = 0
         action = self._action_traj_pred[self._action_idx]
         self._action_idx += 1

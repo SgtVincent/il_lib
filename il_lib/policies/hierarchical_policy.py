@@ -18,12 +18,11 @@ class HierarchicalPolicy(BasePolicy):
         for skill_name, ckpt_path in self.skills_config.items():
             logger.info(f"Loading skill '{skill_name}' from {ckpt_path}")
             # Load checkpoint. We assume the checkpoint contains the model.
-            # We use WBVIMA class.
-            # Note: load_from_checkpoint is a Lightning method.
-            # It requires the class to be the same as the one saved.
-            # If the saved model is WBVIMA, this works.
-            # We map to cpu to avoid GPU OOM during loading, Lightning handles moving to device
-            self.policies[skill_name] = WBVIMA.load_from_checkpoint(ckpt_path, map_location='cpu', weights_only=False)
+            # Compatibility issue for pytorch lightning <2.6 >=2.6
+            if 'weights_only' in WBVIMA.load_from_checkpoint.__code__.co_varnames:
+                self.policies[skill_name] = WBVIMA.load_from_checkpoint(ckpt_path, map_location='cpu', weights_only=False)
+            else:
+                self.policies[skill_name] = WBVIMA.load_from_checkpoint(ckpt_path, map_location='cpu')
             self.policies[skill_name].eval()
             self.policies[skill_name].freeze()
             

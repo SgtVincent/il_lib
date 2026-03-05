@@ -12,6 +12,7 @@ from tqdm import tqdm
 import threading
 import queue as _queue
 import subprocess
+import gc
 from multiprocessing import Process, Queue
 
 # Ensure omnigibson can be imported if it's in the python path
@@ -46,7 +47,7 @@ def custom_rgbd_vid_to_pcd(
     # create a new hdf5 file to store the point cloud data
     with h5py.File(f"{output_dir}/episode_{demo_id:08d}.hdf5", "w") as out_f:
         in_f = pd.read_parquet(
-            f"{data_folder}/2025-challenge-demos/data/task-{task_id:04d}/episode_{demo_id:08d}.parquet"
+            f"{data_folder}/2025-challenge-demos/data/task-{task_id:04d}/episode_{demo_id:08d}.parquet",
         )
         cam_rel_poses = th.from_numpy(np.array(in_f["observation.cam_rel_poses"].tolist(), dtype=np.float32))
         data_size = cam_rel_poses.shape[0]
@@ -146,6 +147,9 @@ def custom_rgbd_vid_to_pcd(
                 pcd_tensor = pcd
             fused_pcd_dset[i : i + batch_size] = pcd_tensor.cpu()
 
+            # Encourage prompt cleanup of large per-batch tensors.
+            del obs, pcd, pcd_tensor, camera_intrinsics
+
     # notify progress (one job finished) via optional progress_queue in globals
     try:
         pq = globals().get("PROGRESS_QUEUE", None)
@@ -164,7 +168,7 @@ def _process_job(job):
             demo_id=demo_id,
             episode_id=0,
             pcd_range=(-0.2, 1.5, -1.5, 1.5, 0.2, 1.5),
-            batch_size=1000,
+            batch_size=128,
             use_fps=True,
         )
         return (task_id, demo_id, None)
@@ -191,6 +195,12 @@ def main():
         type=int,
         default=1,
         help="Maximum number of parallel processes (defaults to number of CPUs).",
+    )
+    parser.add_argument(
+        "--batch_size",
+        type=int,
+        default=128,
+        help="Frames per batch per episode. Lower reduces peak RAM (recommended for multi-proc).",
     )
     
     args = parser.parse_args()
@@ -303,9 +313,12 @@ def main():
                     demo_id=demo_id,
                     episode_id=0,
                     pcd_range=(-0.2, 1.5, -1.5, 1.5, 0.2, 1.5),
-                    batch_size=1000,
+                    batch_size=args.batch_size,
                     use_fps=True,
                 )
+
+                # Per-episode cleanup to prevent worker RSS growth over many episodes.
+                gc.collect()
             except Exception as e:
                 # send an error tuple to the listener and continue
                 try:

@@ -170,3 +170,36 @@ The evaluation produces:
   - `primitive_success_rate`: ST success rate
   - `endtoend_success_rate`: ET success rate
   - `per_demo_results`: Detailed results per demo
+
+---
+
+## 6. MoMa STAGE Policy (This Repo)
+
+This is an evaluation-ready, clean STAGE-style implementation (HSTT-like encoder + MC-MoE-like diffusion decoder) exposed as `arch=moma_stage`.
+
+**Step 1: Start the Policy Server (openpi env)**
+```bash
+cd baselines/il_lib
+python serve.py \
+  robot=r1pro \
+  task=behavior \
+  task.name=turning_on_radio \
+  arch=moma_stage \
+  ckpt_path=/path/to/ckpt.pth
+```
+
+If your task-info tensor size differs, override:
+```bash
+module.feature_extractors.task.input_dim=82
+```
+
+**Step 2: Run the Evaluator (behavior env)**
+```bash
+conda activate behavior
+cd baselines/il_lib
+python ../../OmniGibson/omnigibson/learning/eval.py \
+  policy=websocket \
+  task.name=turning_on_radio \
+  env_wrapper._target_=omnigibson.learning.wrappers.wbvima_wrapper.WBVIMAWrapper \
+  log_path=./eval_logs/moma_stage
+```

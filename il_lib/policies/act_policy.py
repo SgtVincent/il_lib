@@ -27,6 +27,7 @@ class ACT(BasePolicy):
         self,
         *args,
         prop_dim: int,
+        task_dim: Optional[int] = None,
         prop_keys: List[str],
         action_dim: int,
         action_keys: List[str],
@@ -59,8 +60,12 @@ class ACT(BasePolicy):
         self._action_keys = action_keys 
         self.action_dim = action_dim
         self._features = features
+        self._task_dim = int(task_dim) if task_dim is not None else 0
+        if "task" in self._features and self._task_dim <= 0:
+            raise ValueError("ACT features includes 'task' but task_dim is not set or <= 0")
         self._use_depth = obs_backbone.include_depth
         self.obs_backbone = instantiate(obs_backbone)
+        input_prop_dim = prop_dim + (self._task_dim if "task" in self._features else 0)
 
         self.transformer = Transformer(
             d_model=hidden_dim,
@@ -89,12 +94,12 @@ class ACT(BasePolicy):
         self.action_head = nn.Linear(hidden_dim, action_dim)
         self.query_embed = nn.Embedding(num_queries, hidden_dim)
         self.input_proj = nn.Conv2d(obs_backbone.resnet_output_dim, hidden_dim, kernel_size=1)
-        self.input_proj_robot_state = nn.Linear(prop_dim, hidden_dim)
+        self.input_proj_robot_state = nn.Linear(input_prop_dim, hidden_dim)
         # encoder extra parameters
         self.latent_dim = 32 # final size of latent z
         self.cls_embed = nn.Embedding(1, hidden_dim) # extra cls token embedding
         self.encoder_action_proj = nn.Linear(action_dim, hidden_dim) # project action to embedding
-        self.encoder_prop_proj = nn.Linear(prop_dim, hidden_dim) # project prop to embedding
+        self.encoder_prop_proj = nn.Linear(input_prop_dim, hidden_dim) # project prop to embedding
         self.latent_proj = nn.Linear(hidden_dim, self.latent_dim * 2)  # project hidden state to latent std, var
         self.register_buffer('pos_table', self._get_sinusoid_encoding_table(1+1+num_queries, hidden_dim)) # [CLS], qpos, a_seq
         # decoder extra parameters
@@ -131,6 +136,8 @@ class ACT(BasePolicy):
             else:
                 prop_obs.append(obs[prop_key])
         prop_obs = torch.cat(prop_obs, dim=-1)  # (B, L, Prop_dim)
+        if "task" in self._features:
+            prop_obs = torch.cat([prop_obs, obs["task"]], dim=-1)
         # flatten first two dims
         prop_obs = prop_obs.reshape(-1, prop_obs.shape[-1])  # (B * L, Prop_dim)
 
@@ -222,6 +229,7 @@ class ACT(BasePolicy):
         pad_mask = batch.pop("masks")  # (B, T)
         pad_mask = pad_mask.reshape(-1, pad_mask.shape[-1])  # (B * T)
         # ACT assumes true for padding, false for not padding
+        pad_mask = pad_mask.to(torch.bool)
         pad_mask = ~pad_mask
 
         gt_actions = batch.pop("actions")  # already normalized in [-1, 1], (B, T, A)

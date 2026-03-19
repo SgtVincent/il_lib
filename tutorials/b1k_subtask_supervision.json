@@ -1,0 +1,619 @@
+{
+  "assembling_gift_baskets": {
+    "primitive_captions": [
+      "pick up the wicker basket from the floor",
+      "pick up the wicker basket from the floor",
+      "pick up the pillar candle from the coffee table",
+      "pick up the pillar candle from the coffee table",
+      "pick up the swiss cheese from the coffee table",
+      "pick up the swiss cheese from the coffee table",
+      "pick up the butter cookie from the coffee table",
+      "pick up the butter cookie from the coffee table",
+      "pick up the bow from the coffee table",
+      "pick up the bow from the coffee table"
+    ],
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "attach_a_camera_to_a_tripod": {
+    "primitive_captions": [
+      "pick up the digital camera from the floor",
+      "attach the digital camera",
+      "attach the digital camera"
+    ],
+    "task_description": "Attach the digital camera to the camera tripod in the bedroom."
+  },
+  "boxing_books_up_for_storage": {
+    "primitive_captions": [
+      "pick up the storage box from the floor",
+      "pick up the hardback from the bookcase",
+      "pick up the hardback from the bookcase",
+      "pick up the hardback from the bookcase"
+    ],
+    "task_description": "Put all six books from the bookcases in the living room into the box on the living room floor."
+  },
+  "bringing_in_wood": {
+    "primitive_captions": [
+      "pick up the plywood from the floor",
+      "open the door",
+      "place the plywood on the floor",
+      "pick up the plywood from the floor",
+      "pick up the plywood from the floor",
+      "pick up the plywood from the floor"
+    ],
+    "task_description": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+  },
+  "bringing_water": {
+    "primitive_captions": [
+      "open the fridge",
+      "pick up the beer bottle from the fridge",
+      "close the fridge",
+      "place the beer bottle on the coffee table"
+    ],
+    "task_description": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+  },
+  "can_meat": {
+    "primitive_captions": [
+      "open the top cabinet",
+      "pick up the hinged jar and the bratwurst from the top cabinet",
+      "place the hinged jar in the top cabinet",
+      "pick up the hinged jar and the bratwurst from the top cabinet",
+      "place the hinged jar in the top cabinet",
+      "close the top cabinet"
+    ],
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "canning_food": {
+    "primitive_captions": [
+      "pick up the carving knife and the cutting board from the cutting board",
+      "open the fridge",
+      "pick up the steak and the pineapple from the fridge",
+      "close the fridge",
+      "place the steak and the pineapple on the cutting board",
+      "chop the carving knife",
+      "open the bottom cabinet",
+      "pick up the bowl from the bottom cabinet",
+      "close the bottom cabinet",
+      "place on next the bowl to the drop in sink",
+      "pour the cutting board",
+      "pick up the bowl from the drop in sink",
+      "open the bottom cabinet",
+      "place the bowl in the bottom cabinet",
+      "pick up the pineapple from the countertop",
+      "chop the carving knife",
+      "pick up the half pineapple from the cutting board",
+      "chop the carving knife",
+      "pick up the bowl from the countertop",
+      "pour the cutting board",
+      "pick up the half pineapple from the countertop",
+      "chop the carving knife",
+      "pour the cutting board",
+      "pick up the bowl from the drop in sink",
+      "close the bottom cabinet",
+      "pour the cutting board",
+      "pick up the bowl from the drop in sink",
+      "close the bottom cabinet",
+      "close the bottom cabinet",
+      "close the bottom cabinet"
+    ],
+    "task_description": "In the kitchen, open the refrigerator and the cabinet. Take the steak and the pineapple out of the refrigerator and take two bowls from the cabinet. On the chopping board on the countertop, use the carving knife to dice the steak and to dice the pineapple. Put only the diced steak into one bowl and only the diced pineapple into the other bowl - do not mix them. Place both bowls back inside the cabinet, then close the refrigerator and close the cabinet."
+  },
+  "carrying_in_groceries": {
+    "primitive_captions": [
+      "pick up the paper bag from the car ssxsje",
+      "close lid the car ssxsje",
+      "open the door",
+      "place the paper bag on the breakfast table",
+      "pick up the beefsteak tomato from the paper bag",
+      "open the fridge",
+      "place the beefsteak tomato in the fridge",
+      "tip the paper bag",
+      "pour the paper bag",
+      "pick up the carton of milk from the breakfast table",
+      "close the fridge"
+    ],
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "chop_an_onion": {
+    "primitive_captions": [
+      "pick up the cutting board from the bar egwapq",
+      "pick up the vidalia onion from the drop in sink",
+      "chop the parer",
+      "pour the cutting board",
+      "pour the cutting board",
+      "pour the cutting board",
+      "pour the cutting board",
+      "pour the cutting board"
+    ],
+    "task_description": "In the kitchen, take the Vidalia onion out of the sink, dice it on the chopping board with the paring knife, put the diced onion into the bowl on the countertop, then place both the paring knife and the chopping board into the sink."
+  },
+  "chopping_wood": {
+    "primitive_captions": [
+      "chop the axe",
+      "chop the axe",
+      "chop the axe",
+      "chop the axe",
+      "place the axe on the driveway umalys"
+    ],
+    "task_description": "Chop the four logs on the driveway in the garden into eight half logs using the axe and the chopping block."
+  },
+  "clean_a_patio": {
+    "primitive_captions": [
+      "pick up the broom from the floor",
+      "sweep surface the broom",
+      "push the garden chair to the robot",
+      "sweep surface the broom",
+      "place the broom on the floor",
+      "sweep surface the broom",
+      "place the broom on the floor",
+      "sweep surface the broom",
+      "place the broom on the floor",
+      "sweep surface the broom",
+      "place the broom on the floor",
+      "place the broom on the floor"
+    ],
+    "task_description": "Pick up the broom in the garden and sweep the mud off the patio floor until the floor is no longer covered in mud."
+  },
+  "clean_a_trumpet": {
+    "primitive_captions": [
+      "pick up the scrub brush from the desk",
+      "pick up the scrub brush from the desk"
+    ],
+    "task_description": "In the bedroom, pick up the scrub brush from the desk and scrub the cornet (trumpet) on the desk until it's no longer covered in dust."
+  },
+  "clean_boxing_gloves": {
+    "primitive_captions": [
+      "open door the washer ynwamu",
+      "pick up the boxing gloves from the countertop",
+      "close door the washer ynwamu",
+      "turn on switch the washer ynwamu"
+    ],
+    "task_description": "Wash the two dusty boxing gloves from the countertop in the utility room in the washer until they are no longer covered with dust."
+  },
+  "clean_up_your_desk": {
+    "primitive_captions": [
+      "pick up the folder from the eames chair",
+      "push the eames chair to the desk",
+      "place the folder in the bookcase",
+      "pick up the folder from the desk",
+      "pick up the paperback book from the desk",
+      "pick up the paperback book from the desk",
+      "pick up the pencil case from the desk",
+      "insert the pen",
+      "insert the pen",
+      "insert the pen",
+      "place the pencil case on the desk",
+      "pick up the laptop from the bed",
+      "close lid the laptop",
+      "pick up the stapler from the bookcase",
+      "pick up the stapler from the bookcase",
+      "pick up the stapler from the bookcase"
+    ],
+    "task_description": "In the child's room, clean up the desk: put both folders and both paperback books into the bookcase; put the pencil and both pens into the pencil case and leave the case on the desk; take the stapler out of the bookcase and place it on the desk; move the laptop from the bed onto the desk and close it."
+  },
+  "cleaning_up_plates_and_food": {
+    "primitive_captions": [
+      "open the fridge",
+      "pick up the plate from the breakfast table",
+      "pick up the plate from the breakfast table",
+      "close the fridge",
+      "pick up the bowl from the breakfast table"
+    ],
+    "task_description": "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed."
+  },
+  "clearing_food_from_table_into_fridge": {
+    "primitive_captions": [
+      "pick up the tupperware from the bar egwapq",
+      "pick up the half chicken from the plate",
+      "pick up the half apple pie from the plate",
+      "open the fridge",
+      "pick up the tupperware from the breakfast table",
+      "close the fridge"
+    ],
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "collecting_childrens_toys": {
+    "primitive_captions": [
+      "pick up the teddy bear from the floor",
+      "pick up the dice from the bed",
+      "pick up the board game from the bed",
+      "pick up the toy train from the desk",
+      "pick up the board game from the desk",
+      "pick up the dice from the bed"
+    ],
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "cook_bacon": {
+    "primitive_captions": [
+      "open the fridge",
+      "pick up the tray from the fridge",
+      "close the fridge",
+      "place on next the tray to the burner mjvqii",
+      "pick up the frying pan from the burner mjvqii",
+      "pour the tray",
+      "turn on switch the burner mjvqii"
+    ],
+    "task_description": "Take the tray with six slices of bacon out of the refrigerator in the kitchen, cook all six slices in the frying pan on the stove until they're cooked, and make sure the refrigerator is closed when you're done."
+  },
+  "cook_cabbage": {
+    "primitive_captions": [
+      "open the fridge",
+      "pick up the chili and the head cabbage from the fridge",
+      "close the fridge",
+      "place the head cabbage on the cutting board",
+      "place the chili on the plate",
+      "pick up the frying pan from the countertop",
+      "chop the carving knife",
+      "pour the cutting board",
+      "pick up the chili from the plate",
+      "chop the carving knife",
+      "pour the cutting board",
+      "turn on switch the burner mjvqii",
+      "turn on switch the burner mjvqii"
+    ],
+    "task_description": "From the kitchen refrigerator, take the cabbage and the chili, dice them on the chopping board with the knife, cook the diced cabbage and diced chili in the frying pan on the stove, and leave the cooked, diced cabbage and cooked, diced chili in the frying pan."
+  },
+  "cook_hot_dogs": {
+    "primitive_captions": [
+      "open the fridge",
+      "pick up the hotdog from the fridge",
+      "close the fridge",
+      "place the hotdog on the countertop",
+      "place the hotdog in the microwave abzvij",
+      "pick up the hotdog from the countertop",
+      "close door the microwave abzvij",
+      "turn on switch the microwave abzvij"
+    ],
+    "task_description": "Take the two hot dogs out of the refrigerator in the kitchen and cook them in the microwave until both are cooked."
+  },
+  "freeze_pies": {
+    "primitive_captions": [
+      "open the bottom cabinet no top",
+      "pick up the tupperware from the bottom cabinet no top",
+      "close the bottom cabinet no top",
+      "place the tupperware on the countertop",
+      "pick up the apple pie from the plate",
+      "open the bottom cabinet no top",
+      "pick up the tupperware from the bottom cabinet no top",
+      "close the bottom cabinet no top",
+      "place the tupperware on the countertop",
+      "pick up the apple pie from the plate",
+      "open the fridge",
+      "pick up the tupperware from the countertop",
+      "close the fridge"
+    ],
+    "task_description": "In the kitchen, take the two apple pies from the plates on the countertop, put each pie into a separate tupperware container taken from the cabinet, place both tupperwares inside the refrigerator, close the refrigerator, and leave them until the pies are frozen."
+  },
+  "getting_organized_for_work": {
+    "primitive_captions": [
+      "push the swivel chair to the desk",
+      "pick up the mouse from the desk",
+      "pick up the keyboard from the notebook",
+      "pick up the notebook from the desk",
+      "pick up the monitor from the desk",
+      "pick up the keyboard from the desk",
+      "pick up the mouse from the desk",
+      "pick up the pen from the folder",
+      "pick up the folder from the swivel chair",
+      "pick up the notebook from the desk",
+      "pick up the pen from the desk",
+      "push the swivel chair to the desk",
+      "push the swivel chair to the desk",
+      "push the swivel chair to the desk"
+    ],
+    "task_description": "In the bedroom, organize the workspace by keeping the computer under the desk, ensuring the monitor is on the desk, placing the keyboard on the desk next to the monitor, placing the mouse on the desk next to the keyboard, moving the folder from the swivel chair onto the desk next to the mouse, stacking the notebook on top of the folder with the pen on top of the notebook, and positioning the swivel chair next to the desk."
+  },
+  "hanging_pictures": {
+    "primitive_captions": [
+      "pick up the poster from the bar egwapq",
+      "hang the poster"
+    ],
+    "task_description": "Pick up the poster from the kitchen countertop and hang it on one of the wall nails in the kitchen."
+  },
+  "hiding_Easter_eggs": {
+    "primitive_captions": [
+      "move the wicker basket",
+      "pick up the easter egg from the wicker basket",
+      "pick up the easter egg from the wicker basket",
+      "pick up the easter egg from the wicker basket"
+    ],
+    "task_description": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+  },
+  "loading_the_car": {
+    "primitive_captions": [
+      "open lid the car ssxsje",
+      "open the door",
+      "pick up the toy box from the floor",
+      "pick up the digital camera from the coffee table",
+      "pick up the tennis racket from the coffee table",
+      "close lid the car ssxsje"
+    ],
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "make_microwave_popcorn": {
+    "primitive_captions": [
+      "open door the microwave hjjxmi",
+      "pick up the popcorn bag from the bar byvbuc",
+      "close door the microwave hjjxmi",
+      "turn on switch the microwave hjjxmi"
+    ],
+    "task_description": "In the kitchen, take the popcorn bag from the countertop, put it into the microwave, and heat it until the popcorn is cooked so the cooked popcorn ends up inside the bag."
+  },
+  "make_pizza": {
+    "primitive_captions": [
+      "pick up the baking sheet from the bar egwapq",
+      "pick up the carving knife from the bar egwapq",
+      "pick up the bowl from the bar egwapq",
+      "pick up the vidalia onion from the chopping board",
+      "pick up the chopping board from the bar egwapq",
+      "place the vidalia onion on the chopping board",
+      "chop the carving knife",
+      "pour the chopping board",
+      "open the fridge",
+      "pick up the tupperware from the fridge",
+      "close the fridge",
+      "open the fridge",
+      "pick up the tupperware from the fridge",
+      "close the fridge",
+      "pour the tupperware",
+      "chop the carving knife",
+      "pour the chopping board",
+      "pour the bowl",
+      "pour the tupperware",
+      "open door the oven ffitak",
+      "pick up the baking sheet from the bar egwapq",
+      "close door the oven ffitak",
+      "turn on switch the oven ffitak",
+      "open door the oven ffitak",
+      "open door the oven ffitak",
+      "open door the oven ffitak"
+    ],
+    "task_description": "Make a pizza on the cookie sheet in the kitchen: take the grated cheese, the four pieces of pepperoni, and the two mushrooms from their tupperware containers in the refrigerator; chop the Vidalia onion on the chopping board with the knife, and also chop the two whole mushrooms in half; top the pizza dough that's already on the cookie sheet with the cheese, pepperoni, halved mushrooms, and chopped onion; bake it in the oven until it becomes a pizza, and leave the finished pizza on the cookie sheet."
+  },
+  "moving_boxes_to_storage": {
+    "primitive_captions": [
+      "open the door",
+      "pick up the storage box from the floor",
+      "pick up the storage box from the floor"
+    ],
+    "task_description": "Move the two storage containers from the living room to the garage. In the garage, place one container on the floor and stack the other container on top of it (either order is fine)."
+  },
+  "outfit_a_basic_toolbox": {
+    "primitive_captions": [
+      "open lid the toolbox",
+      "open lid the toolbox",
+      "pick up the screwdriver and the allen wrench from the countertop",
+      "pick up the plier from the countertop",
+      "close lid the toolbox",
+      "close lid the toolbox",
+      "close lid the toolbox"
+    ],
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "picking_up_toys": {
+    "primitive_captions": [
+      "pick up the board game from the bed",
+      "pick up the board game from the bed",
+      "pick up the jigsaw puzzle from the desk",
+      "pick up the jigsaw puzzle from the desk",
+      "pick up the jigsaw puzzle from the desk",
+      "pick up the tennis ball from the desk",
+      "pick up the tennis ball from the desk"
+    ],
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_trash": {
+    "primitive_captions": [
+      "pick up the trash can from the floor",
+      "pick up the can of soda from the floor",
+      "pick up the can of soda from the floor",
+      "pick up the can of soda from the floor",
+      "place the trash can on the floor"
+    ],
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "preparing_lunch_box": {
+    "primitive_captions": [
+      "pick up the packing box from the countertop",
+      "pick up the chocolate chip from the chopping board",
+      "pick up the half apple from the chopping board",
+      "pick up the club sandwich from the chopping board",
+      "open the fridge",
+      "pick up the bottle of tea from the fridge",
+      "close the fridge",
+      "place the bottle of tea in the packing box"
+    ],
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "putting_away_Halloween_decorations": {
+    "primitive_captions": [
+      "pick up the cauldron from the floor",
+      "pick up the pillar candle from the floor",
+      "pick up the pillar candle from the floor",
+      "close drawer left the bottom cabinet",
+      "pick up the cauldron from the floor",
+      "pick up the pillar candle from the floor",
+      "pick up the pumpkin from the floor",
+      "close drawer right the bottom cabinet",
+      "pick up the cauldron from the floor",
+      "pick up the cauldron from the floor"
+    ],
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_dishes_away_after_cleaning": {
+    "primitive_captions": [
+      "open the top cabinet",
+      "pick up the plate from the countertop",
+      "pick up the plate from the countertop",
+      "pick up the plate from the bar udatjt",
+      "pick up the plate from the bar udatjt",
+      "close the top cabinet"
+    ],
+    "task_description": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+  },
+  "putting_shoes_on_rack": {
+    "primitive_captions": [
+      "pick up the sandal and the gym shoe from the floor",
+      "pick up the sandal and the gym shoe from the floor"
+    ],
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_up_Christmas_decorations_inside": {
+    "primitive_captions": [
+      "pick up the wicker basket from the floor",
+      "pick up the pillar candle from the sofa",
+      "pick up the pillar candle from the sofa",
+      "pick up the candy cane from the sofa",
+      "pick up the gift box from the floor",
+      "pick up the gift box from the floor",
+      "pick up the gift box from the floor",
+      "pick up the gift box from the floor"
+    ],
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "rearranging_kitchen_furniture": {
+    "primitive_captions": [
+      "open the top cabinet",
+      "pick up the toaster from the bar byvbuc",
+      "pick up the food processor from the bar byvbuc",
+      "pick up the french press from the bar byvbuc",
+      "close the top cabinet"
+    ],
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "set_up_a_coffee_station_in_your_kitchen": {
+    "primitive_captions": [
+      "pick up the paper coffee from the countertop",
+      "pick up the bottle of from the shelf",
+      "pick up the saucer from the countertop",
+      "pick up the electric kettle from the countertop",
+      "pick up the coffee cup from the countertop"
+    ],
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "setting_mousetraps": {
+    "primitive_captions": [
+      "pick up the mousetrap from the bottom cabinet",
+      "pick up the mousetrap from the bottom cabinet"
+    ],
+    "task_description": "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink."
+  },
+  "setting_the_fire": {
+    "primitive_captions": [
+      "pick up the newspaper from the coffee table",
+      "pick up the firewood from the floor",
+      "pick up the lighter from the coffee table",
+      "turn on switch the lighter",
+      "pick up the firewood from the floor",
+      "ignite the lighter",
+      "place the firewood in the wood fireplace",
+      "turn off switch the lighter"
+    ],
+    "task_description": "In the living room, place the newspaper from the table into the wood fireplace, then put both pieces of firewood from the floor on top of the newspaper. Use the cigar lighter to ignite any one of the items so that the whole pile catches fire, and then turn the lighter off."
+  },
+  "slicing_vegetables": {
+    "primitive_captions": [
+      "open the fridge",
+      "pick up the bell pepper from the fridge",
+      "pick up the beet from the fridge",
+      "pick up the zucchini from the fridge",
+      "close the fridge",
+      "place the zucchini on the cutting board",
+      "chop the parer",
+      "chop the parer",
+      "chop the parer"
+    ],
+    "task_description": "From the refrigerator in the kitchen, take out the two bell peppers, the two beets, and the zucchini. Then, on either chopping board on the countertop, use the parer to dice all of them so that only diced bell pepper, diced beet, and diced zucchini remain. Make sure the refrigerator is closed when you finish."
+  },
+  "sorting_household_items": {
+    "primitive_captions": [
+      "open the sliding door",
+      "pick up the bottle of from the hamper",
+      "pick up the box of sanitary from the hamper",
+      "pick up the soap dispenser from the hamper",
+      "pick up the toothbrush and the tube of from the hamper",
+      "pick up the toothbrush and the tube of from the hamper",
+      "pick up the toothbrush and the tube of from the hamper"
+    ],
+    "task_description": "From the two baskets on the bedroom floor, take out the items and organize them in the bathroom: place both detergent bottles under the bathroom sink next to each other; put the box of sanitary napkins on the bathroom shelf; set the soap dispenser on the sink; make sure the cup remains on the sink; put both the toothpaste tube and the toothbrush inside the cup."
+  },
+  "sorting_vegetables": {
+    "primitive_captions": [
+      "pick up the wicker basket from the floor",
+      "pick up the bok choy from the wicker basket",
+      "pick up the vidalia onion from the wicker basket",
+      "place the wicker basket on the floor",
+      "pick up the wicker basket from the floor",
+      "pick up the bok choy from the wicker basket",
+      "pick up the sweet corn from the wicker basket",
+      "place the wicker basket on the floor",
+      "place the wicker basket on the floor"
+    ],
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "spraying_for_bugs": {
+    "primitive_captions": [
+      "pick up the insectifuge atomizer from the floor",
+      "spray the insectifuge atomizer",
+      "spray the insectifuge atomizer"
+    ],
+    "task_description": "Pick up the pesticide atomizer in the garden and spray insectifuge to fully cover both potted plants in the garden."
+  },
+  "spraying_fruit_trees": {
+    "primitive_captions": [
+      "pick up the pesticide atomizer from the floor",
+      "spray the pesticide atomizer",
+      "spray the pesticide atomizer"
+    ],
+    "task_description": "In the garden, pick up the pesticide atomizer on the floor and spray pesticide onto both trees until each tree trunk is fully covered."
+  },
+  "storing_food": {
+    "primitive_captions": [
+      "open the bottom cabinet",
+      "pick up the bottle of olive oil from the countertop",
+      "pick up the jar of from the countertop",
+      "pick up the bag of from the countertop",
+      "pick up the box of from the countertop",
+      "pick up the box of from the countertop",
+      "close the bottom cabinet",
+      "close the bottom cabinet",
+      "close the bottom cabinet",
+      "close the bottom cabinet"
+    ],
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "tidying_bedroom": {
+    "primitive_captions": [
+      "pick up the sandal from the floor",
+      "pick up the hardback from the bed"
+    ],
+    "task_description": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+  },
+  "turning_on_radio": {
+    "primitive_captions": [
+      "pick up the radio from the coffee table",
+      "press the radio",
+      "place the radio on the coffee table"
+    ],
+    "task_description": "Turn on the radio receiver that's on the table in the living room."
+  },
+  "wash_a_baseball_cap": {
+    "primitive_captions": [
+      "open door the washer ynwamu",
+      "pick up the baseball cap from the countertop",
+      "close door the washer ynwamu",
+      "turn on switch the washer ynwamu"
+    ],
+    "task_description": "Wash the two baseball caps on the countertop in the utility room using the washer until they are no longer dirty."
+  },
+  "wash_dog_toys": {
+    "primitive_captions": [
+      "open door the washer ynwamu",
+      "open the bottom cabinet no top",
+      "pick up the softball and the teddy bear from the bottom cabinet no top",
+      "pick up the teddy bear from the bottom cabinet no top",
+      "close door the washer ynwamu",
+      "turn on switch the washer ynwamu"
+    ],
+    "task_description": "In the utility room, take the two teddy toys, the tennis ball, and the softball out of the cabinet and wash them in the washer so that both teddies are free of dirt and dust, the tennis ball has no debris, and the softball has no dirt."
+  }
+}

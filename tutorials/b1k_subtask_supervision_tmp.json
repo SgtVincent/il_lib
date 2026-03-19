@@ -1,0 +1,906 @@
+{
+  "assembling_gift_baskets::pick up from::pick up the bow and the pillar candle from the coffee table": {
+    "primitive_caption": "pick up the bow and the pillar candle from the coffee table",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "assembling_gift_baskets::pick up from::pick up the bow from the coffee table": {
+    "primitive_caption": "pick up the bow from the coffee table",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "assembling_gift_baskets::pick up from::pick up the butter cookie and the bow from the coffee table": {
+    "primitive_caption": "pick up the butter cookie and the bow from the coffee table",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "assembling_gift_baskets::pick up from::pick up the butter cookie from the coffee table": {
+    "primitive_caption": "pick up the butter cookie from the coffee table",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "assembling_gift_baskets::pick up from::pick up the pillar candle from the coffee table": {
+    "primitive_caption": "pick up the pillar candle from the coffee table",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "assembling_gift_baskets::pick up from::pick up the swiss cheese from the coffee table": {
+    "primitive_caption": "pick up the swiss cheese from the coffee table",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "assembling_gift_baskets::pick up from::pick up the swiss cheese from the floors ulujpr": {
+    "primitive_caption": "pick up the swiss cheese from the floors ulujpr",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "assembling_gift_baskets::pick up from::pick up the wicker basket from the floors ulujpr": {
+    "primitive_caption": "pick up the wicker basket from the floors ulujpr",
+    "task_description": "Place one candle, one butter cookie, one piece of Swiss cheese, and one bow from the table into each of the four wicker baskets on the floor in the living room."
+  },
+  "boxing_books_up_for_storage::pick up from::pick up the hardback from the bookcase otwukr": {
+    "primitive_caption": "pick up the hardback from the bookcase otwukr",
+    "task_description": "Put all six books from the bookcases in the living room into the box on the living room floor."
+  },
+  "boxing_books_up_for_storage::pick up from::pick up the hardback from the floors rfqizg": {
+    "primitive_caption": "pick up the hardback from the floors rfqizg",
+    "task_description": "Put all six books from the bookcases in the living room into the box on the living room floor."
+  },
+  "boxing_books_up_for_storage::pick up from::pick up the storage box from the floors rfqizg": {
+    "primitive_caption": "pick up the storage box from the floors rfqizg",
+    "task_description": "Put all six books from the bookcases in the living room into the box on the living room floor."
+  },
+  "bringing_in_wood::open door::open door the door vudhlc": {
+    "primitive_caption": "open door the door vudhlc",
+    "task_description": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+  },
+  "bringing_in_wood::open door::open door the plywood": {
+    "primitive_caption": "open door the plywood",
+    "task_description": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+  },
+  "bringing_in_wood::pick up from::pick up the plywood from the floors qadhjb": {
+    "primitive_caption": "pick up the plywood from the floors qadhjb",
+    "task_description": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+  },
+  "bringing_in_wood::pick up from::pick up the plywood from the floors xorxro": {
+    "primitive_caption": "pick up the plywood from the floors xorxro",
+    "task_description": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+  },
+  "bringing_in_wood::place on::place the plywood on the floors qadhjb": {
+    "primitive_caption": "place the plywood on the floors qadhjb",
+    "task_description": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+  },
+  "bringing_in_wood::place on::place the plywood on the floors xorxro": {
+    "primitive_caption": "place the plywood on the floors xorxro",
+    "task_description": "Bring the three plywood sheets from the garden into the corridor and place them on the floor there."
+  },
+  "bringing_water::close door::close door the coffee table": {
+    "primitive_caption": "close door the coffee table",
+    "task_description": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+  },
+  "bringing_water::close door::close door the fridge dszchb": {
+    "primitive_caption": "close door the fridge dszchb",
+    "task_description": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+  },
+  "bringing_water::open door::open door the fridge dszchb": {
+    "primitive_caption": "open door the fridge dszchb",
+    "task_description": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+  },
+  "bringing_water::pick up from::pick up the beer bottle from the coffee table": {
+    "primitive_caption": "pick up the beer bottle from the coffee table",
+    "task_description": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+  },
+  "bringing_water::pick up from::pick up the beer bottle from the fridge dszchb": {
+    "primitive_caption": "pick up the beer bottle from the fridge dszchb",
+    "task_description": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+  },
+  "bringing_water::place on::place the beer bottle on the coffee table": {
+    "primitive_caption": "place the beer bottle on the coffee table",
+    "task_description": "Retrieve the two bottles from the refrigerator in the kitchen, bring them to the living room, and place both on the coffee table. Make sure the refrigerator is closed when you finish."
+  },
+  "can_meat::close door::close door [['left', 'right_door']] the top cabinet": {
+    "primitive_caption": "close door [['left', 'right_door']] the top cabinet",
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "can_meat::close door::close door [['left_door', 'right_door']] the top cabinet": {
+    "primitive_caption": "close door [['left_door', 'right_door']] the top cabinet",
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "can_meat::close door::close door [['right_door', 'left_door']] the top cabinet": {
+    "primitive_caption": "close door [['right_door', 'left_door']] the top cabinet",
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "can_meat::open door::open door [['right_door', 'left_door', 'right_door']] the top cabinet": {
+    "primitive_caption": "open door [['right_door', 'left_door', 'right_door']] the top cabinet",
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "can_meat::open door::open door [['right_door', 'left_door']] the top cabinet": {
+    "primitive_caption": "open door [['right_door', 'left_door']] the top cabinet",
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "can_meat::pick up from::pick up the hinged jar and the bratwurst from the top cabinet": {
+    "primitive_caption": "pick up the hinged jar and the bratwurst from the top cabinet",
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "can_meat::place in::place the hinged jar in the top cabinet": {
+    "primitive_caption": "place the hinged jar in the top cabinet",
+    "task_description": "Open the kitchen cabinet, take out the two hinged jars, open them, place exactly two cooked bratwursts from the chopping board on the countertop into each jar, then close both jars, put them back inside the cabinet, and close the cabinet."
+  },
+  "carrying_in_groceries::close door::close door [['right_door']] the breakfast table": {
+    "primitive_caption": "close door [['right_door']] the breakfast table",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::close door::close door [['right_door']] the door bexenl": {
+    "primitive_caption": "close door [['right_door']] the door bexenl",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::close door::close door [['right_door']] the fridge petcxr": {
+    "primitive_caption": "close door [['right_door']] the fridge petcxr",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::close lid::close lid the car ssxsje": {
+    "primitive_caption": "close lid the car ssxsje",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::open door::open door [['right_door', 'right_door']] the fridge petcxr": {
+    "primitive_caption": "open door [['right_door', 'right_door']] the fridge petcxr",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::open door::open door [['right_door']] the door bexenl": {
+    "primitive_caption": "open door [['right_door']] the door bexenl",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::open door::open door [['right_door']] the floors nbxnpk": {
+    "primitive_caption": "open door [['right_door']] the floors nbxnpk",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::open door::open door [['right_door']] the fridge petcxr": {
+    "primitive_caption": "open door [['right_door']] the fridge petcxr",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::open door::open door the door bexenl": {
+    "primitive_caption": "open door the door bexenl",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::pick up from::pick up the beefsteak tomato from the paper bag": {
+    "primitive_caption": "pick up the beefsteak tomato from the paper bag",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::pick up from::pick up the carton of milk from the breakfast table": {
+    "primitive_caption": "pick up the carton of milk from the breakfast table",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::pick up from::pick up the paper bag from the car ssxsje": {
+    "primitive_caption": "pick up the paper bag from the car ssxsje",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::place in::place the beefsteak tomato in the door bexenl": {
+    "primitive_caption": "place the beefsteak tomato in the door bexenl",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::place in::place the beefsteak tomato in the fridge petcxr": {
+    "primitive_caption": "place the beefsteak tomato in the fridge petcxr",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::place on::place the paper bag on the breakfast table": {
+    "primitive_caption": "place the paper bag on the breakfast table",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::pour::pour the paper bag": {
+    "primitive_caption": "pour the paper bag",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "carrying_in_groceries::tip over::tip the paper bag": {
+    "primitive_caption": "tip the paper bag",
+    "task_description": "Take the sack of groceries out of the car trunk in the garage, bring it to the kitchen, and put both the tomato and the carton of milk into the refrigerator in the kitchen. When you're done, close the car trunk and make sure the refrigerator in the kitchen is closed."
+  },
+  "cleaning_up_plates_and_food::close door::close door [['right_door']] the fridge petcxr": {
+    "primitive_caption": "close door [['right_door']] the fridge petcxr",
+    "task_description": "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed."
+  },
+  "cleaning_up_plates_and_food::open door::open door [['right_door']] the fridge petcxr": {
+    "primitive_caption": "open door [['right_door']] the fridge petcxr",
+    "task_description": "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed."
+  },
+  "cleaning_up_plates_and_food::pick up from::pick up the bowl from the breakfast table": {
+    "primitive_caption": "pick up the bowl from the breakfast table",
+    "task_description": "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed."
+  },
+  "cleaning_up_plates_and_food::pick up from::pick up the plate from the breakfast table": {
+    "primitive_caption": "pick up the plate from the breakfast table",
+    "task_description": "From the breakfast table in the kitchen, move both pizzas - keeping each on its plate - into the same refrigerator, put both bowls into one sink, and make sure the refrigerator is closed."
+  },
+  "clearing_food_from_table_into_fridge::close door::close door [['right']] the fridge petcxr": {
+    "primitive_caption": "close door [['right']] the fridge petcxr",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::close door::close door [['right_door']] the fridge petcxr": {
+    "primitive_caption": "close door [['right_door']] the fridge petcxr",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::close door::close door the fridge petcxr": {
+    "primitive_caption": "close door the fridge petcxr",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::open door::open door [['right_door']] the fridge petcxr": {
+    "primitive_caption": "open door [['right_door']] the fridge petcxr",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::open door::open door the fridge petcxr": {
+    "primitive_caption": "open door the fridge petcxr",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::pick up from::pick up the half apple pie from the plate": {
+    "primitive_caption": "pick up the half apple pie from the plate",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::pick up from::pick up the half chicken from the plate": {
+    "primitive_caption": "pick up the half chicken from the plate",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::pick up from::pick up the tupperware from the bar egwapq": {
+    "primitive_caption": "pick up the tupperware from the bar egwapq",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "clearing_food_from_table_into_fridge::pick up from::pick up the tupperware from the breakfast table": {
+    "primitive_caption": "pick up the tupperware from the breakfast table",
+    "task_description": "Pack the half chicken and the half apple pie from the plates on the breakfast table into the two tupperware containers from the countertop, then put both tupperware containers inside the refrigerator in the kitchen and make sure the refrigerator is closed at the end."
+  },
+  "collecting_childrens_toys::pick up from::pick up the board game and the dice from the bed ivdnny": {
+    "primitive_caption": "pick up the board game and the dice from the bed ivdnny",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the board game from the bed ivdnny": {
+    "primitive_caption": "pick up the board game from the bed ivdnny",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the board game from the desk nbpuns": {
+    "primitive_caption": "pick up the board game from the desk nbpuns",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the dice and the board game from the bed ivdnny": {
+    "primitive_caption": "pick up the dice and the board game from the bed ivdnny",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the dice from the bed ivdnny": {
+    "primitive_caption": "pick up the dice from the bed ivdnny",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the dice from the bookcase zfpyqe": {
+    "primitive_caption": "pick up the dice from the bookcase zfpyqe",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the straight chair from the floors vmamhf": {
+    "primitive_caption": "pick up the straight chair from the floors vmamhf",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the teddy bear from the floors vmamhf": {
+    "primitive_caption": "pick up the teddy bear from the floors vmamhf",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::pick up from::pick up the toy train from the desk nbpuns": {
+    "primitive_caption": "pick up the toy train from the desk nbpuns",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "collecting_childrens_toys::place in::place the dice and the board game and the toy train in the bookcase zfpyqe": {
+    "primitive_caption": "place the dice and the board game and the toy train in the bookcase zfpyqe",
+    "task_description": "Pick up the two dice from the bed, the two teddy bears from the floor, and the two board games (one from the desk and one from the bed), and place them all inside the same bookcase in the child's room."
+  },
+  "hiding_easter_eggs::move to::move the wicker basket": {
+    "primitive_caption": "move the wicker basket",
+    "task_description": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+  },
+  "hiding_easter_eggs::move to::move to the wicker basket": {
+    "primitive_caption": "move to the wicker basket",
+    "task_description": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+  },
+  "hiding_easter_eggs::pick up from::pick up the easter egg from the lawn aztwla": {
+    "primitive_caption": "pick up the easter egg from the lawn aztwla",
+    "task_description": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+  },
+  "hiding_easter_eggs::pick up from::pick up the easter egg from the wicker basket": {
+    "primitive_caption": "pick up the easter egg from the wicker basket",
+    "task_description": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+  },
+  "hiding_easter_eggs::pick up from::pick up the wicker basket from the lawn aztwla": {
+    "primitive_caption": "pick up the wicker basket from the lawn aztwla",
+    "task_description": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+  },
+  "hiding_easter_eggs::place on next to::place on next the easter egg to the tree dyymaq": {
+    "primitive_caption": "place on next the easter egg to the tree dyymaq",
+    "task_description": "Take the three Easter eggs out of the wicker basket on the lawn in the garden, then place them on the lawn next to a single tree (choose any tree) so that all three eggs are next to the same tree and none are left in the basket."
+  },
+  "loading_the_car::close lid::close lid the car ssxsje": {
+    "primitive_caption": "close lid the car ssxsje",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::open door::open door the door bexenl": {
+    "primitive_caption": "open door the door bexenl",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::open lid::open lid the car ssxsje": {
+    "primitive_caption": "open lid the car ssxsje",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::pick up from::pick up the digital camera and the tennis racket from the coffee table": {
+    "primitive_caption": "pick up the digital camera and the tennis racket from the coffee table",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::pick up from::pick up the digital camera from the coffee table": {
+    "primitive_caption": "pick up the digital camera from the coffee table",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::pick up from::pick up the tennis racket and the digital camera from the coffee table": {
+    "primitive_caption": "pick up the tennis racket and the digital camera from the coffee table",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::pick up from::pick up the tennis racket from the coffee table": {
+    "primitive_caption": "pick up the tennis racket from the coffee table",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::pick up from::pick up the toy box from the coffee table": {
+    "primitive_caption": "pick up the toy box from the coffee table",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::pick up from::pick up the toy box from the floors ulujpr": {
+    "primitive_caption": "pick up the toy box from the floors ulujpr",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "loading_the_car::place in::place the digital camera and the toy box in the toy box": {
+    "primitive_caption": "place the digital camera and the toy box in the toy box",
+    "task_description": "Put the digital camera from the living room table into the container on the living room floor. Then take the container and the tennis racket to the garage, place both in the car trunk, and close it."
+  },
+  "moving_boxes_to_storage::open door::open door the door bexenl": {
+    "primitive_caption": "open door the door bexenl",
+    "task_description": "Move the two storage containers from the living room to the garage. In the garage, place one container on the floor and stack the other container on top of it (either order is fine)."
+  },
+  "moving_boxes_to_storage::pick up from::pick up the storage box from the floors ulujpr": {
+    "primitive_caption": "pick up the storage box from the floors ulujpr",
+    "task_description": "Move the two storage containers from the living room to the garage. In the garage, place one container on the floor and stack the other container on top of it (either order is fine)."
+  },
+  "outfit_a_basic_toolbox::close lid::close lid the toolbox": {
+    "primitive_caption": "close lid the toolbox",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::open lid::open lid the toolbox": {
+    "primitive_caption": "open lid the toolbox",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the allen wrench and the drill from the countertop fjkase": {
+    "primitive_caption": "pick up the allen wrench and the drill from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the allen wrench and the drill from the toolbox": {
+    "primitive_caption": "pick up the allen wrench and the drill from the toolbox",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the allen wrench and the flashlight from the countertop fjkase": {
+    "primitive_caption": "pick up the allen wrench and the flashlight from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the allen wrench and the plier from the countertop fjkase": {
+    "primitive_caption": "pick up the allen wrench and the plier from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the allen wrench and the screwdriver from the countertop fjkase": {
+    "primitive_caption": "pick up the allen wrench and the screwdriver from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the allen wrench from the countertop fjkase": {
+    "primitive_caption": "pick up the allen wrench from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the drill and the allen wrench from the countertop fjkase": {
+    "primitive_caption": "pick up the drill and the allen wrench from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the drill and the flashlight from the countertop fjkase": {
+    "primitive_caption": "pick up the drill and the flashlight from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the drill and the plier from the countertop fjkase": {
+    "primitive_caption": "pick up the drill and the plier from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the drill and the screwdriver from the countertop fjkase": {
+    "primitive_caption": "pick up the drill and the screwdriver from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the drill from the countertop fjkase": {
+    "primitive_caption": "pick up the drill from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the flashlight and the allen wrench from the countertop fjkase": {
+    "primitive_caption": "pick up the flashlight and the allen wrench from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the flashlight and the drill from the countertop fjkase": {
+    "primitive_caption": "pick up the flashlight and the drill from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the flashlight and the plier from the countertop fjkase": {
+    "primitive_caption": "pick up the flashlight and the plier from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the flashlight and the screwdriver from the countertop fjkase": {
+    "primitive_caption": "pick up the flashlight and the screwdriver from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the flashlight from the countertop fjkase": {
+    "primitive_caption": "pick up the flashlight from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the plier and the allen wrench from the countertop fjkase": {
+    "primitive_caption": "pick up the plier and the allen wrench from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the plier and the drill from the countertop fjkase": {
+    "primitive_caption": "pick up the plier and the drill from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the plier and the flashlight from the countertop fjkase": {
+    "primitive_caption": "pick up the plier and the flashlight from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the plier and the screwdriver from the countertop fjkase": {
+    "primitive_caption": "pick up the plier and the screwdriver from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the plier from the countertop fjkase": {
+    "primitive_caption": "pick up the plier from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the screwdriver and the allen wrench from the countertop fjkase": {
+    "primitive_caption": "pick up the screwdriver and the allen wrench from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the screwdriver and the drill from the countertop fjkase": {
+    "primitive_caption": "pick up the screwdriver and the drill from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the screwdriver and the flashlight from the countertop fjkase": {
+    "primitive_caption": "pick up the screwdriver and the flashlight from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the screwdriver and the plier from the countertop fjkase": {
+    "primitive_caption": "pick up the screwdriver and the plier from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "outfit_a_basic_toolbox::pick up from::pick up the screwdriver from the countertop fjkase": {
+    "primitive_caption": "pick up the screwdriver from the countertop fjkase",
+    "task_description": "In the utility room, put the drill, pliers, flashlight, Allen wrench, and screwdriver from the tabletop into the toolbox, keep the toolbox on the tabletop, and close the toolbox."
+  },
+  "picking_up_toys::pick up from::pick up the board game from the bed rrcvaq": {
+    "primitive_caption": "pick up the board game from the bed rrcvaq",
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_toys::pick up from::pick up the board game from the desk xhjsub": {
+    "primitive_caption": "pick up the board game from the desk xhjsub",
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_toys::pick up from::pick up the jigsaw puzzle and the toy box from the desk xhjsub": {
+    "primitive_caption": "pick up the jigsaw puzzle and the toy box from the desk xhjsub",
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_toys::pick up from::pick up the jigsaw puzzle from the desk xhjsub": {
+    "primitive_caption": "pick up the jigsaw puzzle from the desk xhjsub",
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_toys::pick up from::pick up the tennis ball from the desk xhjsub": {
+    "primitive_caption": "pick up the tennis ball from the desk xhjsub",
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_toys::pick up from::pick up the toy box from the desk xhjsub": {
+    "primitive_caption": "pick up the toy box from the desk xhjsub",
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_toys::push to::push the board game to the bed rrcvaq": {
+    "primitive_caption": "push the board game to the bed rrcvaq",
+    "task_description": "Put all the toys in the child's room - the three board games (two on the bed and one on the table), the two jigsaw puzzles on the table, and the tennis ball on the table - inside the toy box on the table in the child's room."
+  },
+  "picking_up_trash::pick up from::pick up the can of soda from the can of soda": {
+    "primitive_caption": "pick up the can of soda from the can of soda",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::pick up from::pick up the can of soda from the floors ulujpr": {
+    "primitive_caption": "pick up the can of soda from the floors ulujpr",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::pick up from::pick up the can of soda from the floors zqjkvm": {
+    "primitive_caption": "pick up the can of soda from the floors zqjkvm",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::pick up from::pick up the can of soda from the trash can": {
+    "primitive_caption": "pick up the can of soda from the trash can",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::pick up from::pick up the trash can from the floors ulujpr": {
+    "primitive_caption": "pick up the trash can from the floors ulujpr",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::pick up from::pick up the trash can from the floors zqjkvm": {
+    "primitive_caption": "pick up the trash can from the floors zqjkvm",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::place on::place the can of soda on the floors zqjkvm": {
+    "primitive_caption": "place the can of soda on the floors zqjkvm",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::place on::place the can of soda on the trash can": {
+    "primitive_caption": "place the can of soda on the trash can",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::place on::place the trash can on the floors ulujpr": {
+    "primitive_caption": "place the trash can on the floors ulujpr",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "picking_up_trash::place on::place the trash can on the floors zqjkvm": {
+    "primitive_caption": "place the trash can on the floors zqjkvm",
+    "task_description": "Put the three can of soda from the living room inside the tash can in the kitchen."
+  },
+  "preparing_lunch_box::close door::close door the fridge dszchb": {
+    "primitive_caption": "close door the fridge dszchb",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::open door::open door the fridge dszchb": {
+    "primitive_caption": "open door the fridge dszchb",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the bottle of tea from the fridge dszchb": {
+    "primitive_caption": "pick up the bottle of tea from the fridge dszchb",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the chocolate chip and the half apple from the chopping board": {
+    "primitive_caption": "pick up the chocolate chip and the half apple from the chopping board",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the chocolate chip from the chopping board": {
+    "primitive_caption": "pick up the chocolate chip from the chopping board",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the chocolate chip from the packing box": {
+    "primitive_caption": "pick up the chocolate chip from the packing box",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the club sandwich from the chopping board": {
+    "primitive_caption": "pick up the club sandwich from the chopping board",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the club sandwich from the packing box": {
+    "primitive_caption": "pick up the club sandwich from the packing box",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the half apple from the chopping board": {
+    "primitive_caption": "pick up the half apple from the chopping board",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::pick up from::pick up the packing box from the countertop kelker": {
+    "primitive_caption": "pick up the packing box from the countertop kelker",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::place in::place the bottle of tea in the chopping board": {
+    "primitive_caption": "place the bottle of tea in the chopping board",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::place in::place the bottle of tea in the fridge dszchb": {
+    "primitive_caption": "place the bottle of tea in the fridge dszchb",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::place in::place the bottle of tea in the packing box": {
+    "primitive_caption": "place the bottle of tea in the packing box",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::place in::place the chocolate chip in the packing box": {
+    "primitive_caption": "place the chocolate chip in the packing box",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "preparing_lunch_box::place in::place the club sandwich in the packing box": {
+    "primitive_caption": "place the club sandwich in the packing box",
+    "task_description": "Put both apple halves, the club sandwich, and the chocolate chip cookie from the chopping board on the kitchen countertop into the packing box on the countertop. Then take the bottle of tea out of the refrigerator, put it into the same box, and close the refrigerator when you're done."
+  },
+  "putting_away_halloween_decorations::close drawer::close drawer [['left']] the bottom cabinet": {
+    "primitive_caption": "close drawer [['left']] the bottom cabinet",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::close drawer::close drawer [['right']] the bottom cabinet": {
+    "primitive_caption": "close drawer [['right']] the bottom cabinet",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::open drawer::open drawer [['left']] the bottom cabinet": {
+    "primitive_caption": "open drawer [['left']] the bottom cabinet",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::open drawer::open drawer [['right']] the bottom cabinet": {
+    "primitive_caption": "open drawer [['right']] the bottom cabinet",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::pick up from::pick up the cauldron and the pillar candle from the floors ulujpr": {
+    "primitive_caption": "pick up the cauldron and the pillar candle from the floors ulujpr",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::pick up from::pick up the cauldron from the floors ulujpr": {
+    "primitive_caption": "pick up the cauldron from the floors ulujpr",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::pick up from::pick up the pillar candle from the floors ulujpr": {
+    "primitive_caption": "pick up the pillar candle from the floors ulujpr",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::pick up from::pick up the pumpkin from the floors ulujpr": {
+    "primitive_caption": "pick up the pumpkin from the floors ulujpr",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_away_halloween_decorations::place in::place the pillar candle in the bottom cabinet": {
+    "primitive_caption": "place the pillar candle in the bottom cabinet",
+    "task_description": "Place each of the two pumpkins and all three candles from the living room inside a cabinet in the living room (use any cabinet), then make sure every cabinet is closed, and position the cauldron so it is next to a table in the living room."
+  },
+  "putting_dishes_away_after_cleaning::close door::close door [['left_door', 'right_door']] the top cabinet": {
+    "primitive_caption": "close door [['left_door', 'right_door']] the top cabinet",
+    "task_description": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+  },
+  "putting_dishes_away_after_cleaning::close door::close door [['right', 'left_door']] the top cabinet": {
+    "primitive_caption": "close door [['right', 'left_door']] the top cabinet",
+    "task_description": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+  },
+  "putting_dishes_away_after_cleaning::close door::close door [['right_door', 'left_door']] the top cabinet": {
+    "primitive_caption": "close door [['right_door', 'left_door']] the top cabinet",
+    "task_description": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+  },
+  "putting_dishes_away_after_cleaning::open door::open door [['right_door', 'left_door']] the top cabinet": {
+    "primitive_caption": "open door [['right_door', 'left_door']] the top cabinet",
+    "task_description": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+  },
+  "putting_dishes_away_after_cleaning::pick up from::pick up the plate from the bar udatjt": {
+    "primitive_caption": "pick up the plate from the bar udatjt",
+    "task_description": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+  },
+  "putting_dishes_away_after_cleaning::pick up from::pick up the plate from the countertop kelzer": {
+    "primitive_caption": "pick up the plate from the countertop kelzer",
+    "task_description": "In the kitchen, gather all eight plates from the two countertops, place them all inside a single cabinet (either one), and make sure all cabinets are closed when you're done."
+  },
+  "putting_shoes_on_rack::pick up from::pick up the gym shoe and the sandal from the floors xorxro": {
+    "primitive_caption": "pick up the gym shoe and the sandal from the floors xorxro",
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_shoes_on_rack::pick up from::pick up the gym shoe and the sandal from the hall tree": {
+    "primitive_caption": "pick up the gym shoe and the sandal from the hall tree",
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_shoes_on_rack::pick up from::pick up the gym shoe from the floors xorxro": {
+    "primitive_caption": "pick up the gym shoe from the floors xorxro",
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_shoes_on_rack::pick up from::pick up the sandal and the gym shoe and the hall tree from the floors xorxro": {
+    "primitive_caption": "pick up the sandal and the gym shoe and the hall tree from the floors xorxro",
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_shoes_on_rack::pick up from::pick up the sandal and the gym shoe from the floors xorxro": {
+    "primitive_caption": "pick up the sandal and the gym shoe from the floors xorxro",
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_shoes_on_rack::pick up from::pick up the sandal and the gym shoe from the hall tree": {
+    "primitive_caption": "pick up the sandal and the gym shoe from the hall tree",
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_shoes_on_rack::pick up from::pick up the sandal from the floors xorxro": {
+    "primitive_caption": "pick up the sandal from the floors xorxro",
+    "task_description": "Pick up the two gym shoes and the two sandals from the corridor floor and place them onto the hallstand (shoe rack) in the corridor, making sure they are on the rack and not on the floor. Arrange them so the two gym shoes are next to each other and the two sandals are next to each other."
+  },
+  "putting_up_christmas_decorations_inside::pick up from::pick up the candy cane from the sofa hiphpn": {
+    "primitive_caption": "pick up the candy cane from the sofa hiphpn",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::pick up from::pick up the candy cane from the sofa lugrhk": {
+    "primitive_caption": "pick up the candy cane from the sofa lugrhk",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::pick up from::pick up the gift box from the floors qgmjvd": {
+    "primitive_caption": "pick up the gift box from the floors qgmjvd",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::pick up from::pick up the gift box from the floors uzsntg": {
+    "primitive_caption": "pick up the gift box from the floors uzsntg",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::pick up from::pick up the pillar candle from the sofa hiphpn": {
+    "primitive_caption": "pick up the pillar candle from the sofa hiphpn",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::pick up from::pick up the pillar candle from the sofa lugrhk": {
+    "primitive_caption": "pick up the pillar candle from the sofa lugrhk",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::pick up from::pick up the wicker basket from the floors uzsntg": {
+    "primitive_caption": "pick up the wicker basket from the floors uzsntg",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::push to::push the gift box to the christmas tree": {
+    "primitive_caption": "push the gift box to the christmas tree",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "putting_up_christmas_decorations_inside::push to::push the wreath to the robot": {
+    "primitive_caption": "push the wreath to the robot",
+    "task_description": "In the living room, take the wreath, three candy canes, and two pillar candles out of the wicker basket. Place the wreath and two of the candy canes on the same living-room sofa. Put the remaining candy cane on top of a dining-room table. Put both pillar candles together on top of one dining-room table (they can share the same table). Finally, place all three gift boxes under or right next to the Christmas tree in the living room."
+  },
+  "rearranging_kitchen_furniture::close door::close door [['left', 'right']] the top cabinet": {
+    "primitive_caption": "close door [['left', 'right']] the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::close door::close door [['left_door', 'right_door']] the top cabinet": {
+    "primitive_caption": "close door [['left_door', 'right_door']] the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::close door::close door [['right', 'left']] the top cabinet": {
+    "primitive_caption": "close door [['right', 'left']] the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::close door::close door [['right_door', 'left_door']] the top cabinet": {
+    "primitive_caption": "close door [['right_door', 'left_door']] the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::open door::open door [['left', 'right_door']] the top cabinet": {
+    "primitive_caption": "open door [['left', 'right_door']] the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::open door::open door [['left_door', 'right_door']] the top cabinet": {
+    "primitive_caption": "open door [['left_door', 'right_door']] the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::open door::open door [['right_door', 'left_door']] the top cabinet": {
+    "primitive_caption": "open door [['right_door', 'left_door']] the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::pick up from::pick up the food processor from the bar byvbuc": {
+    "primitive_caption": "pick up the food processor from the bar byvbuc",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::pick up from::pick up the french press from the bar byvbuc": {
+    "primitive_caption": "pick up the french press from the bar byvbuc",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::pick up from::pick up the toaster from the bar byvbuc": {
+    "primitive_caption": "pick up the toaster from the bar byvbuc",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "rearranging_kitchen_furniture::pick up from::pick up the toaster from the top cabinet": {
+    "primitive_caption": "pick up the toaster from the top cabinet",
+    "task_description": "Move the toaster, food processor, and French press from the kitchen countertop into the same kitchen cabinet, and make sure that cabinet is closed at the end."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::pick up from::pick up the bottle of from the countertop kelzer": {
+    "primitive_caption": "pick up the bottle of from the countertop kelzer",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::pick up from::pick up the bottle of from the shelf pfusrd": {
+    "primitive_caption": "pick up the bottle of from the shelf pfusrd",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::pick up from::pick up the coffee cup from the countertop kelzer": {
+    "primitive_caption": "pick up the coffee cup from the countertop kelzer",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::pick up from::pick up the electric kettle from the countertop kelzer": {
+    "primitive_caption": "pick up the electric kettle from the countertop kelzer",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::pick up from::pick up the electric kettle from the shelf pfusrd": {
+    "primitive_caption": "pick up the electric kettle from the shelf pfusrd",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::pick up from::pick up the paper coffee from the countertop kelzer": {
+    "primitive_caption": "pick up the paper coffee from the countertop kelzer",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::pick up from::pick up the saucer from the countertop kelzer": {
+    "primitive_caption": "pick up the saucer from the countertop kelzer",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "set_up_a_coffee_station_in_your_kitchen::place on::place the coffee cup on the saucer": {
+    "primitive_caption": "place the coffee cup on the saucer",
+    "task_description": "Set up a coffee station on the kitchen countertop: keep the coffee maker on the countertop, move the bottle of coffee from the kitchen shelf to the counter next to the coffee maker, place a paper coffee filter on top of the coffee maker, put the saucer next to the coffee maker with the coffee cup on the saucer, and place the electric kettle next to the coffee maker."
+  },
+  "setting_mousetraps::pick up from::pick up the mousetrap from the bottom cabinet": {
+    "primitive_caption": "pick up the mousetrap from the bottom cabinet",
+    "task_description": "Take the four mousetraps from the cabinet in the bathroom and place them on the bathroom floor. Make sure all four end up on the same floor surface, and ensure that at least two of them are either under or directly next to the same bathroom sink."
+  },
+  "sorting_vegetables::pick up from::pick up the bok choy and the sweet corn from the wicker basket": {
+    "primitive_caption": "pick up the bok choy and the sweet corn from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the bok choy from the wicker basket": {
+    "primitive_caption": "pick up the bok choy from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the broccoli and the leek from the wicker basket": {
+    "primitive_caption": "pick up the broccoli and the leek from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the leek and the broccoli and the vidalia onion from the wicker basket": {
+    "primitive_caption": "pick up the leek and the broccoli and the vidalia onion from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the leek and the broccoli from the wicker basket": {
+    "primitive_caption": "pick up the leek and the broccoli from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the sweet corn from the wicker basket": {
+    "primitive_caption": "pick up the sweet corn from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the vidalia onion and the wicker basket from the wicker basket": {
+    "primitive_caption": "pick up the vidalia onion and the wicker basket from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the vidalia onion from the wicker basket": {
+    "primitive_caption": "pick up the vidalia onion from the wicker basket",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::pick up from::pick up the wicker basket from the floors kxcpgy": {
+    "primitive_caption": "pick up the wicker basket from the floors kxcpgy",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::place in::place the sweet corn and the wicker basket in the mixing bowl": {
+    "primitive_caption": "place the sweet corn and the wicker basket in the mixing bowl",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "sorting_vegetables::place on::place the wicker basket on the floors kxcpgy": {
+    "primitive_caption": "place the wicker basket on the floors kxcpgy",
+    "task_description": "Sort the vegetables from the two wicker baskets on the kitchen floor into the mixing bowls on the kitchen countertop: put all three bok choy and all three Vidalia onions together into one mixing bowl; put both leeks and both broccoli together into a second mixing bowl; and put all three sweet corn into a third mixing bowl."
+  },
+  "storing_food::close door::close door [['left_door']] the bottom cabinet": {
+    "primitive_caption": "close door [['left_door']] the bottom cabinet",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::close door::close door [['left_door']] the box of": {
+    "primitive_caption": "close door [['left_door']] the box of",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::open door::open door [['left_door']] the bottom cabinet": {
+    "primitive_caption": "open door [['left_door']] the bottom cabinet",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::pick up from::pick up the bag of from the countertop kelzer": {
+    "primitive_caption": "pick up the bag of from the countertop kelzer",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::pick up from::pick up the bottle of olive oil from the countertop kelzer": {
+    "primitive_caption": "pick up the bottle of olive oil from the countertop kelzer",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::pick up from::pick up the box of from the bottom cabinet": {
+    "primitive_caption": "pick up the box of from the bottom cabinet",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::pick up from::pick up the box of from the countertop kelzer": {
+    "primitive_caption": "pick up the box of from the countertop kelzer",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::pick up from::pick up the jar of from the countertop kelzer": {
+    "primitive_caption": "pick up the jar of from the countertop kelzer",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "storing_food::push to::push the box of to the countertop kelzer": {
+    "primitive_caption": "push the box of to the countertop kelzer",
+    "task_description": "Put away all the food on the kitchen countertop by storing it inside the kitchen cabinets: move the two boxes of oatmeal, two bags of chips, two bottles of olive oil, and two jars of sugar from the countertop into the kitchen cabinets (each item can go into either cabinet)."
+  },
+  "tidying_bedroom::pick up from::pick up the hardback and the nightstand wbxekb from the bed gxfipj": {
+    "primitive_caption": "pick up the hardback and the nightstand wbxekb from the bed gxfipj",
+    "task_description": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+  },
+  "tidying_bedroom::pick up from::pick up the hardback from the bed gxfipj": {
+    "primitive_caption": "pick up the hardback from the bed gxfipj",
+    "task_description": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+  },
+  "tidying_bedroom::pick up from::pick up the sandal and the floors htolat from the floors htolat": {
+    "primitive_caption": "pick up the sandal and the floors htolat from the floors htolat",
+    "task_description": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+  },
+  "tidying_bedroom::pick up from::pick up the sandal from the floors htolat": {
+    "primitive_caption": "pick up the sandal from the floors htolat",
+    "task_description": "In the bedroom, move the book from the bed onto either nightstand, and place the two sandals side by side next to the bed."
+  },
+  "turning_on_radio::pick up from::pick up the radio from the coffee table": {
+    "primitive_caption": "pick up the radio from the coffee table",
+    "task_description": "Turn on the radio receiver that's on the table in the living room."
+  },
+  "turning_on_radio::place on::place the radio on the coffee table": {
+    "primitive_caption": "place the radio on the coffee table",
+    "task_description": "Turn on the radio receiver that's on the table in the living room."
+  },
+  "turning_on_radio::press::press the radio": {
+    "primitive_caption": "press the radio",
+    "task_description": "Turn on the radio receiver that's on the table in the living room."
+  }
+}

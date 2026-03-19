@@ -37,64 +37,86 @@ class BehaviorDataModule(LightningDataModule):
         self._kwargs = kwargs
 
         self._train_dataset, self._val_dataset = None, None
+        self._test_dataset = None
+        self._train_demo_keys = None
+        self._val_demo_keys = None
+        self._test_demo_keys = None
 
     def setup(self, stage: str) -> None:
-        if stage == "fit" or stage is None:
-            # get dataset class module
+        if stage == "fit" or stage is None or stage == "test":
             module_path, class_name = self._dataset_class.rsplit(".", 1)
             DatasetClassModule = getattr(importlib.import_module(module_path), class_name)
             all_demo_keys = DatasetClassModule.get_all_demo_keys(self._data_path, self._task_name)
-            # limit number of demos
             if self._max_num_demos is not None:
                 all_demo_keys = all_demo_keys[: self._max_num_demos]
-            self._train_demo_keys, self._val_demo_keys = train_test_split(
+            train_demo_keys, val_demo_keys = train_test_split(
                 all_demo_keys,
                 test_size=self._val_split_ratio,
                 random_state=self._seed,
             )
-            # initialize datasets
-            self._train_dataset = DatasetClassModule(
-                *self._args,
-                **self._kwargs,
-                data_path=self._data_path,
-                demo_keys=self._train_demo_keys,
-                seed=self._seed,
-            )
-            self._val_dataset = DatasetClassModule(
-                *self._args,
-                **self._kwargs,
-                data_path=self._data_path,
-                demo_keys=self._val_demo_keys,
-                seed=self._seed,
-            )
+
+            if stage == "fit" or stage is None:
+                self._train_demo_keys, self._val_demo_keys = train_demo_keys, val_demo_keys
+                self._train_dataset = DatasetClassModule(
+                    *self._args,
+                    **self._kwargs,
+                    data_path=self._data_path,
+                    demo_keys=self._train_demo_keys,
+                    seed=self._seed,
+                )
+                self._val_dataset = DatasetClassModule(
+                    *self._args,
+                    **self._kwargs,
+                    data_path=self._data_path,
+                    demo_keys=self._val_demo_keys,
+                    seed=self._seed,
+                )
+
+            if stage == "test":
+                self._test_demo_keys = self._val_demo_keys if self._val_demo_keys is not None else val_demo_keys
+                self._test_dataset = DatasetClassModule(
+                    *self._args,
+                    **self._kwargs,
+                    data_path=self._data_path,
+                    demo_keys=self._test_demo_keys,
+                    seed=self._seed,
+                )
 
     def train_dataloader(self) -> DataLoader:
         assert self._train_dataset is not None
+        persistent_workers = min(self._batch_size, self._dataloader_num_workers) > 0
         return DataLoader(
             self._train_dataset,
             batch_size=self._batch_size,
             num_workers=min(self._batch_size, self._dataloader_num_workers),
             pin_memory=True,
-            persistent_workers=True,
+            persistent_workers=persistent_workers,
             drop_last=True,
         )
 
     def val_dataloader(self) -> DataLoader:
         assert self._val_dataset is not None
+        persistent_workers = min(self._val_batch_size, self._dataloader_num_workers) > 0
         return DataLoader(
             self._val_dataset,
             batch_size=self._val_batch_size,
             num_workers=min(self._val_batch_size, self._dataloader_num_workers),
             pin_memory=True,
-            persistent_workers=True,
-            drop_last=True,
+            persistent_workers=persistent_workers,
+            drop_last=False,
         )
 
     def test_dataloader(self) -> DataLoader:
-        """
-        For test_step(), simply returns a dummy dataset.
-        """
-        return DataLoader(DummyDataset())
+        assert self._test_dataset is not None
+        persistent_workers = min(self._val_batch_size, self._dataloader_num_workers) > 0
+        return DataLoader(
+            self._test_dataset,
+            batch_size=self._val_batch_size,
+            num_workers=min(self._val_batch_size, self._dataloader_num_workers),
+            pin_memory=True,
+            persistent_workers=persistent_workers,
+            drop_last=False,
+        )
 
     def on_train_epoch_start(self) -> None:
         # set epoch for train dataset, which will trigger shuffling

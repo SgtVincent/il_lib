@@ -52,6 +52,7 @@ class MomaSTAGE(BasePolicy):
         xf_n_head: int,
         xf_dropout_rate: float,
         xf_use_geglu: bool,
+        action_expert: Optional[DictConfig] = None,
         # ====== Action Decoding ======
         learnable_action_readout_token: bool,
         action_dim: int,
@@ -83,6 +84,11 @@ class MomaSTAGE(BasePolicy):
         lr_layer_decay: float = 1.0,
         weight_decay: float = 0.0,
         loss_on_latest_obs_only: bool = False,
+        log_skill_buckets: bool = False,
+        max_skill_buckets: int = 32,
+        log_failure_stats: bool = False,
+        failure_top_k: int = 16,
+        failure_quantile: float = 0.95,
         **kwargs,
     ) -> None:
         super().__init__(*args, **kwargs)
@@ -140,25 +146,37 @@ class MomaSTAGE(BasePolicy):
         left_dim = self._action_key_dims["left_arm"] + self._action_key_dims["left_gripper"]
         right_dim = self._action_key_dims["right_arm"] + self._action_key_dims["right_gripper"]
         assert mobility_dim + left_dim + right_dim == self.action_dim
-
-        self.action_decoder = WholeBodyUNetDiffusionHead(
-            whole_body_decoding_order=["mobility", "left", "right"],
-            action_dim_per_part={
-                "mobility": mobility_dim,
-                "left": left_dim,
-                "right": right_dim,
-            },
-            obs_dim=decoder_obs_dim,
-            action_horizon=action_prediction_horizon,
-            diffusion_step_embed_dim=diffusion_step_embed_dim,
-            noise_scheduler=instantiate(noise_scheduler),
-            noise_scheduler_step_kwargs=noise_scheduler_step_kwargs,
-            inference_denoise_steps=num_denoise_steps_per_inference,
-            unet_down_dims=unet_down_dims,
-            unet_kernel_size=unet_kernel_size,
-            unet_n_groups=unet_n_groups,
-            unet_cond_predict_scale=unet_cond_predict_scale,
-        )
+        if action_expert is not None:
+            self.action_decoder = instantiate(
+                action_expert,
+                obs_dim=decoder_obs_dim,
+                action_horizon=action_prediction_horizon,
+                action_dim_per_part={
+                    "mobility": mobility_dim,
+                    "left": left_dim,
+                    "right": right_dim,
+                },
+                whole_body_decoding_order=["mobility", "left", "right"],
+            )
+        else:
+            self.action_decoder = WholeBodyUNetDiffusionHead(
+                whole_body_decoding_order=["mobility", "left", "right"],
+                action_dim_per_part={
+                    "mobility": mobility_dim,
+                    "left": left_dim,
+                    "right": right_dim,
+                },
+                obs_dim=decoder_obs_dim,
+                action_horizon=action_prediction_horizon,
+                diffusion_step_embed_dim=diffusion_step_embed_dim,
+                noise_scheduler=instantiate(noise_scheduler),
+                noise_scheduler_step_kwargs=noise_scheduler_step_kwargs,
+                inference_denoise_steps=num_denoise_steps_per_inference,
+                unet_down_dims=unet_down_dims,
+                unet_kernel_size=unet_kernel_size,
+                unet_n_groups=unet_n_groups,
+                unet_cond_predict_scale=unet_cond_predict_scale,
+            )
 
         # Learning
         self.lr = lr
@@ -169,6 +187,11 @@ class MomaSTAGE(BasePolicy):
         self.lr_layer_decay = lr_layer_decay
         self.weight_decay = weight_decay
         self.loss_on_latest_obs_only = loss_on_latest_obs_only
+        self.log_skill_buckets = bool(log_skill_buckets)
+        self.max_skill_buckets = int(max_skill_buckets)
+        self.log_failure_stats = bool(log_failure_stats)
+        self.failure_top_k = int(failure_top_k)
+        self.failure_quantile = float(failure_quantile)
 
         self.save_hyperparameters()
 
@@ -302,6 +325,7 @@ class MomaSTAGE(BasePolicy):
 
         pad_mask = batch.pop("masks")  # (B, T_obs, T_act)
         target_action_dict = batch.pop("actions")
+        skill_id = batch.get("skill_id", None)
 
         transformer_output = self.forward(batch)
         action_readout_tokens = self._get_action_readout_tokens(transformer_output)
@@ -332,6 +356,32 @@ class MomaSTAGE(BasePolicy):
         }
         summed_l1 = sum(all_loss.values())
         all_loss["l1"] = summed_l1
+        denom = pad_mask.sum(dim=(1, 2)).clamp(min=1.0)
+        per_sample = sum(v.sum(dim=(1, 2)) for v in all_l1.values()) / denom * self.action_prediction_horizon
+        if self.log_skill_buckets and skill_id is not None:
+            if not isinstance(skill_id, torch.Tensor):
+                skill_id = torch.as_tensor(skill_id)
+            if skill_id.ndim == 2:
+                skill_id = skill_id[:, -1]
+            if skill_id.ndim == 1 and skill_id.shape[0] == B:
+                sid = skill_id.to(device=per_sample.device, dtype=torch.long)
+                unique = torch.unique(sid).detach().cpu().tolist()
+                unique = sorted(int(x) for x in unique)[: max(0, self.max_skill_buckets)]
+                for u in unique:
+                    m = sid == int(u)
+                    if torch.any(m):
+                        all_loss[f"l1_skill_{u}"] = per_sample[m].mean()
+        if self.log_failure_stats:
+            x = per_sample.detach()
+            if x.numel() > 0:
+                top_k = min(max(1, int(self.failure_top_k)), int(x.numel()))
+                top_mean = torch.topk(x, k=top_k, largest=True).values.mean()
+                q = float(self.failure_quantile)
+                q = min(max(q, 0.0), 1.0)
+                p = torch.quantile(x, q) if x.numel() > 1 else x.max()
+                all_loss[f"l1_p{int(q * 100)}"] = p
+                all_loss["l1_max"] = x.max()
+                all_loss[f"l1_top{top_k}_mean"] = top_mean
         return summed_l1, all_loss, B
 
     def configure_optimizers(self) -> OptimizerLRScheduler:
@@ -528,6 +578,9 @@ class MomaSTAGE(BasePolicy):
             data["odom"] = data_batch["obs"]["odom"]
         if "task" in self._features and "task" in data_batch["obs"]:
             data["task"] = data_batch["obs"]["task"]
+        for k in ["skill_id", "skill_one_hot", "paligemma_token"]:
+            if k in data_batch["obs"]:
+                data[k] = data_batch["obs"][k]
         if extract_action:
             data.update(
                 {

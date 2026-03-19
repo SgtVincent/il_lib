@@ -132,7 +132,18 @@ class BasePolicy(LightningModule, ABC):
         return log_dict
 
     def test_step(self, *args, **kwargs):
-        logger.info("Skipping test step.")
+        loss, log_dict, real_batch_size = self.policy_evaluation_step(*args, **kwargs)
+        log_dict = {f"test/{k}": v for k, v in log_dict.items()}
+        log_dict["test/loss"] = loss
+        self.log_dict(
+            log_dict,
+            prog_bar=True,
+            on_step=False,
+            on_epoch=True,
+            batch_size=real_batch_size,
+            sync_dist=True,
+        )
+        return log_dict
 
     def on_validation_epoch_end(self):
         # only run test for global zero rank

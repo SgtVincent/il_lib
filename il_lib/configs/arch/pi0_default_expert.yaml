@@ -1,0 +1,56 @@
+# @package _global_
+
+arch_name: pi0_default_expert
+
+horizon: 16
+num_latest_obs: 2
+deployed_action_steps: 8
+
+module:
+  _target_: il_lib.policies.Pi0ActionExpertPolicy
+
+  prop_keys:
+    - odom/base_velocity
+    - qpos/torso
+    - qpos/left_arm
+    - qpos/left_gripper
+    - qpos/right_arm
+    - qpos/right_gripper
+    - eef/left_pos
+    - eef/left_quat
+    - eef/right_pos
+    - eef/right_quat
+
+  task_dim: 82
+  state_encoder_hidden_dim: 512
+  state_encoder_hidden_depth: 2
+  state_encoder_activation: swish
+  state_dim: 32
+
+  action_dim: 23
+  action_keys: ${robot.action_keys}
+  action_key_dims: ${robot.action_key_dims}
+  num_latest_obs: ${num_latest_obs}
+  deployed_action_steps: ${deployed_action_steps}
+  horizon: ${horizon}
+
+  num_flow_steps_per_inference: 16
+
+  pi0_dtype: bfloat16
+  paligemma_variant: gemma_2b
+  action_expert_variant: gemma_300m
+  action_expert_name: gemma_token
+  action_expert_kwargs: null
+  pi0_ckpt_path: null
+  freeze_pi0_vlm: true
+  freeze_pi0_gemma_expert: false
+
+  dummy_token_id: 0
+  dummy_image_value: -1.0
+
+  optimizer: adamw
+
+data:
+  use_action_chunks: false
+  visual_obs_types: []
+  use_task_info: true

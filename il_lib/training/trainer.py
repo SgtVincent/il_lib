@@ -106,6 +106,7 @@ class Trainer:
         # our own info
         obj.run_config = self.cfg
         obj.run_name = self.run_name
+        obj.run_dir = self.run_dir
         # add properties from trainer
         for attr in [
             "global_rank",
